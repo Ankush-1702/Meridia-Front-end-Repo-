@@ -25,7 +25,7 @@ A gauge shows the vessel's score between 0 and 5. Below it, a box titled **See w
 - The gauge colours run red, orange, yellow, light green and green from low to high. The screen shows no named risk bands or thresholds. **[CONFIRM: any official score bands or what counts as a good or poor score]**
 - How the score is calculated, and how often it is refreshed, is not shown on screen. **[CONFIRM]**
 - If a vessel has no score, you see an **Unscored** label and the text "No MTI score is available for this vessel yet." and "Scores appear once there is enough activity data to assess it."
-- The breakdown and ranking comparison are not shown in the app. The box says they are **Available on request** – click the box to see the **Contact us** details.
+- The breakdown and ranking comparison are not shown in the app. The box says they are **Available on request** – select **More about MTI** to learn more and find contact details **[CONFIRM: the app shows a hover card with a More about MTI link, not a Contact us box]**.
 
 ## Troubleshooting
 | Problem | What to do |

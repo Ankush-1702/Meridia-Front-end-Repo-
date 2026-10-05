@@ -35,7 +35,7 @@ You see the vessel's identity, its details, and its recent track and events.
 - **Registry** shows **Built**, **Shipbuilder**, **Country of build**, **Hull type**, **Port of registry**, **Classification**, **P&I Club** and **DOC company**.
 - **Ownership** shows **Operator**, **Registered owner**, **Technical manager**, **Ship manager** and **Group beneficial owner**. A company search icon appears next to a company name.
 - **Next Port** shows **Destination** and **ETA**. **[CONFIRM]** the source and freshness of this data.
-- **PurpleTRAC screening** and **MTI score** show an "Unlock" message with "Available on request." if your account or user is not entitled to them. Click the message to see the **Contact us** details.
+- **PurpleTRAC screening** and **MTI score** show an "Unlock" message with "Available on request." if your account or user is not entitled to them. Hover over it and select **More about PurpleTRAC** or **More about MTI** for details and contact information. **[CONFIRM: the app shows a hover card with these links, not a Contact us box]**
 - Open the three-dot menu in the header to choose **Add to Library** or **Remove from Library**.
 - **Ask IQ** appears next to the tabs only if your account or user is entitled to Ask IQ.
 - The header shows a refresh control. **[CONFIRM]** its label; it reloads the date range used for the map.

@@ -25,7 +25,7 @@ The **Overall** row shows one badge: **Ok** (green), **Warning** (amber), **Crit
 - There are no settings or filters for the screening in this section.
 - The screening runs again each time you expand the section for a vessel that has no screening currently running. **[CONFIRM: whether each run is saved or counted against a screening allowance]**
 - The code behind the screen says results are kept if you navigate away. **[CONFIRM: how long results are retained and where to find them later]**
-- A box named **Get the full breakdown** says you can see every check behind the result (sanctions, PSC history, ship movement and more). It is marked **Available on request** – click the box to see the **Contact us** details.
+- A box named **Get the full breakdown** says you can see every check behind the result (sanctions, PSC history, ship movement and more). It is marked **Available on request** – select **More about PurpleTRAC** to learn more and find contact details **[CONFIRM: the app shows a hover card with a More about PurpleTRAC link, not a Contact us box]**.
 - If no result arrives within about 2.5 minutes, the section shows an error.
 
 ## Troubleshooting
