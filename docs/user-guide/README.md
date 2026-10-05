@@ -8,8 +8,8 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 ## Module map (proposed KB structure)
 | # | Module | Route | Articles | Status |
 |---|--------|-------|----------|--------|
-| 1 | Authentication | `/login`, `/reset-password` | How to log in · How to log in with a verification code (MFA) · How to reset your password · How to log out | **POC done (3 of 4)** |
-| 2 | My Account | `/analytics/account` | Personal info · Change password · Set up / manage MFA · Notification settings · General settings | Next |
+| 1 | Authentication | `/login`, `/reset-password` | How to log in · How to log in with a verification code (MFA) · How to reset your password · How to log out (see My Profile → Sign out) | **POC done** |
+| 2 | My Profile | `/analytics/account` | View profile · Time zone & theme · Notification pop-ups · Change password · Sign out | **Drafted** |
 | 3 | Library (home) | `/`, `/analytics/library` | Landing page overview | Planned |
 | 4 | Vessels | `/analytics/vessel/:id` | Search/view a vessel | Planned |
 | 5 | Ports | `/analytics/port/:id` | Port details, congestion | Planned |
@@ -23,3 +23,8 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 1. **P1 (POC):** Login page, Login filled in, MFA code screen, Reset – enter email, Reset – code + new password (incl. requirements tooltip), success toast on Login, landing page after login.
 2. **P2:** My Account → Security (Change password, MFA), Logout control.
 3. **P3:** Every module's main screen, plus any modal, dropdown, filter panel or export dialog (these are the places users get stuck).
+
+## Notes for customers audience
+- No admin-only screens exist in the front end; admin-related content is limited to the read-only **Role** / **Account ID** on My Profile. MFA self-setup is commented out of the UI, so it is intentionally not documented.
+- Product Fruits-ready output: `product-fruits/` (HTML articles + tour/checklist definitions).
+- Screenshots: pending test-environment URL.
