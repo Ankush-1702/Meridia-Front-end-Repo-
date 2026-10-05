@@ -50,6 +50,14 @@ Use Product Fruits' point-and-click selector (no stable ids). Only for accounts 
 | 2 | Add vessels card | Add vessels | Search for vessels by name or IMO, or upload a list of IMOs (use **Download template**). |
 | 3 | Preview | Check it | Review the vessels that will be in the fleet. |
 | 4 | Save button | Save | Save the fleet. It then appears on the **Fleets** tab in your Library. |
+## Tour 7 – Create a custom zone (URL: `/analytics/custom-zones/new`)
+Use Product Fruits' point-and-click selector (no stable ids).
+| # | Element | Title | Text |
+|---|---|---|---|
+| 1 | Form: name & description | Name your zone | Give the zone a name and a description (5–150 characters). |
+| 2 | **Polygon** / **Circle** tabs | Choose a shape | Pick the shape you want to draw. |
+| 3 | Map drawing tools | Draw it | Draw the zone on the map, or upload a GeoJSON/WKT file. |
+| 4 | Save button | Save | Save the zone. New zones can take up to 24 hours to show data. **[CONFIRM]** |
 
 ## Checklist – "Get started with Meridia"
 1. Sign in to Meridia (Tour 1)

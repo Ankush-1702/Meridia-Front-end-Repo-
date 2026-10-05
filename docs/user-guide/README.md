@@ -15,6 +15,8 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 | 5 | Ports | `/analytics/port/:id` | Port details, congestion | Planned |
 | 6 | Zones / Custom zones | `/analytics/zone/:id`, `/analytics/custom-zones` | View zones, create/edit custom zone | Planned |
 | 7 | Fleets | `/analytics/fleet/new`, `/:id`, `/:id/edit` | Create a fleet · Edit or delete a fleet · Open & read a fleet page · View your fleet on the map · Read fleet composition · View fleet events. *Filter-based vessel adding held in `fleets/_unpublished/` – it does not exist in the app (filters only narrow the view).* | **Drafted (6 live + 1 held)** |
+| 6 | Zones / Custom zones | `/analytics/zone/:id`, `/analytics/custom-zones` | Open & read a zone page · Live zone traffic on the map · Zone traffic charts · Zone events table · View & manage custom zones · Create a custom zone · Upload GeoJSON/WKT · Edit a custom zone. *Delete a custom zone held in `zones/_unpublished/` – the Delete action is commented out in the app.* | **Drafted (7 live + 1 held)** |
+| 7 | Fleets | `/analytics/fleet/new`, `/:id`, `/:id/edit` | Create/edit a fleet | Planned |
 | 8 | Notifications | `/analytics/notifications` | View/manage notifications | Planned |
 | 9 | Meridia IQ (chat) | `/analytics/chat2` | Start a chat · Read answers, tables & maps · Manage chat history · Ask IQ about a vessel, port or zone. *Only the current version is documented; the older chat version is unreachable.* | **Drafted (4)** |
 | 10 | Company search | – | Search a company | Planned |
@@ -40,6 +42,15 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 - Cancel while editing always opens the Discard dialog even with no changes; the Library delete modal's cancel button label is lowercase ("cancel").
 - The 1,000-vessel cap per fleet is fixed (confirmed by product); the preview text still says "your N-vessel limit", which could be reworded.
 
+## Front-end issues spotted while drafting Zones / Custom Zones
+- **Custom-zone Delete is switched off** (menu item commented out; no delete API call exists) – article held in `zones/_unpublished/`.
+- Upload accepts only **GeoJSON / WKT** (`.geojson`, `.json`, `.wkt`, `.txt`) – not shapefile/KML. A circle/point with no radius silently defaults to 1000 m; LineString/MultiPoint are treated as polygons.
+- Circle map tooltip typo "Ecapse to stop editing"; form banner says "drag to adjust radius" while the tooltip says "right click to edit circle".
+- Banner after saving always says "24 hours", but the code uses 15 minutes when the API URL contains "test".
+- Description rule (5–150 characters) has no inline field message; editing a non-custom zone by URL shows a blank form instead of an error.
+- Zone page: **Details tab unreachable**; Export button and Arrivals/Departures tab commented out (CSV only); card title changes ("Vessels In Zone" → "In Zone"); map popup has placeholder fallbacks ("VESSEL NAME", "9999999", "Tug", "Panama").
+- Zone events: a failed load silently shows an empty table; missing speed/course/heading/draught can show `0`.
+- The PurpleTRAC Auto-Screening toggle (zone notifications) shows a lock + "Contact your account manager" tooltip to everyone, not only entitled users.
 ## Front-end issues spotted while drafting Meridia IQ
 - Only the current version (`/analytics/chat2`) is reachable: `/analytics/chats/*` redirects to it, so the older chat UI and its "Switch to Meridia IQ 2.0" toggle are dead code; the V1/V2 switcher component is unused.
 - **Ask IQ sends the prompt automatically** (it navigates with the prompt and sends it, no chance to edit first). Ask IQ buttons are commented out in the fleet page and fleet event panel header.
