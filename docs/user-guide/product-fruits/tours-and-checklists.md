@@ -42,14 +42,6 @@ No stable ids exist on these controls; use Product Fruits' point-and-click selec
 | 3 | **Filters** button | Narrow results | Filter by flag, country, type and more. |
 | 4 | **Add to Library** button | Save it | Click **Add to Library**. The item now appears on your Library page. |
 
-## Tour 8 – Create your first fleet (URL: `/analytics/fleet/new`)
-Use Product Fruits' point-and-click selector (no stable ids). Only for accounts with fleet management.
-| # | Element | Title | Text |
-|---|---|---|---|
-| 1 | Fleet name field | Name your fleet | Give the fleet a clear name. |
-| 2 | Add vessels card | Add vessels | Search for vessels by name or IMO, or upload a list of IMOs (use **Download template**). |
-| 3 | Preview | Check it | Review the vessels that will be in the fleet. |
-| 4 | Save button | Save | Save the fleet. It then appears on the **Fleets** tab in your Library. |
 ## Tour 7 – Create a custom zone (URL: `/analytics/custom-zones/new`)
 Use Product Fruits' point-and-click selector (no stable ids).
 | # | Element | Title | Text |
@@ -58,6 +50,15 @@ Use Product Fruits' point-and-click selector (no stable ids).
 | 2 | **Polygon** / **Circle** tabs | Choose a shape | Pick the shape you want to draw. |
 | 3 | Map drawing tools | Draw it | Draw the zone on the map, or upload a GeoJSON/WKT file. |
 | 4 | Save button | Save | Save the zone. New zones can take up to 24 hours to show data. **[CONFIRM]** |
+
+## Tour 8 – Create your first fleet (URL: `/analytics/fleet/new`)
+Use Product Fruits' point-and-click selector (no stable ids). Only for accounts with fleet management.
+| # | Element | Title | Text |
+|---|---|---|---|
+| 1 | Fleet name field | Name your fleet | Give the fleet a clear name. |
+| 2 | Add vessels card | Add vessels | Search for vessels by name or IMO, or upload a list of IMOs (use **Download template**). |
+| 3 | Preview | Check it | Review the vessels that will be in the fleet. |
+| 4 | Save button | Save | Save the fleet. It then appears on the **Fleets** tab in your Library. |
 
 ## Checklist – "Get started with Meridia"
 1. Sign in to Meridia (Tour 1)
