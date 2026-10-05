@@ -16,9 +16,6 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 | 6 | Zones / Custom zones | `/analytics/zone/:id`, `/analytics/custom-zones` | Open & read a zone page · Live zone traffic on the map · Zone traffic charts · Zone events table · View & manage custom zones · Create a custom zone · Upload GeoJSON/WKT · Edit a custom zone. *Delete a custom zone held in `zones/_unpublished/` – the Delete action is commented out in the app.* | **Drafted (7 live + 1 held)** |
 | 7 | Fleets | `/analytics/fleet/new`, `/:id`, `/:id/edit` | Create a fleet · Edit or delete a fleet · Open & read a fleet page · View your fleet on the map · Read fleet composition · View fleet events. *Filter-based vessel adding held in `fleets/_unpublished/` – it does not exist in the app (filters only narrow the view).* | **Drafted (6 live + 1 held)** |
 | 8 | Notifications | `/analytics/notifications` | Open & read your notifications · Filter & manage the Notifications page · Turn notifications on for a port or zone · Download your exports | **Drafted (4)** |
-| 9 | Meridia IQ (chat) | `/analytics/chat2` | Start a chat, chat history | Planned |
-
-| 8 | Notifications | `/analytics/notifications` | View/manage notifications | Planned |
 | 9 | Meridia IQ (chat) | `/analytics/chat2` | Start a chat · Read answers, tables & maps · Manage chat history · Ask IQ about a vessel, port or zone. *Only the current version is documented; the older chat version is unreachable.* | **Drafted (4)** |
 | 10 | Company search | – | Search a company | Planned |
 
