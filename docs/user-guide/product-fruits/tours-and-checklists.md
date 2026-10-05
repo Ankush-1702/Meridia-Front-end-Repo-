@@ -42,6 +42,29 @@ No stable ids exist on these controls; use Product Fruits' point-and-click selec
 | 3 | **Filters** button | Narrow results | Filter by flag, country, type and more. |
 | 4 | **Add to Library** button | Save it | Click **Add to Library**. The item now appears on your Library page. |
 
+## Tour 5 – Explore a vessel (URL: `/analytics/vessel/*`)
+Use Product Fruits' point-and-click selector (these controls have no stable ids).
+| # | Element | Title | Text |
+|---|---|---|---|
+| 1 | Page header (vessel name) | Vessel page | See the vessel's name, flag, IMO and type. |
+| 2 | **Overview** / **Events** tabs | Two views | Overview shows the map and timeline; Events lists port, zone and other events. |
+| 3 | Vessel details panel | Details | Expand a section such as Dimensions, Registry or Ownership. |
+| 4 | Map toolbar date range | Choose a period | Pick Previous 7/14/30/90 days or a Custom range. |
+| 5 | Replay bar | Replay | Press play to replay the vessel's movements. |
+| 6 | Three-dot menu (header) | Save it | Add the vessel to your Library. |
+
+## Tour 6 – Explore a port (URL: `/analytics/port/*`)
+Use Product Fruits' point-and-click selector (no stable ids).
+| # | Element | Title | Text |
+|---|---|---|---|
+| 1 | Page header (port name) | Port page | See the port's name and country. |
+| 2 | Tabs: **Overview**, **Congestion and Utilisation**, **Berths**, **Events** | Four views | Switch between live traffic, congestion charts, berths and port events. |
+| 3 | Overview map | Live traffic | See vessels in and heading to the port. |
+| 4 | Time range / date picker | Choose a period | Pick a preset or a custom range. |
+| 5 | **Events** → Inbound Vessels | Who's coming | See vessels heading to this port. |
+| 6 | Three-dot menu (header) | Save it | Add the port to your Library. |
+
+
 ## Tour 7 – Create a custom zone (URL: `/analytics/custom-zones/new`)
 Use Product Fruits' point-and-click selector (no stable ids).
 | # | Element | Title | Text |
