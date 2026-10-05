@@ -42,6 +42,17 @@ No stable ids exist on these controls; use Product Fruits' point-and-click selec
 | 3 | **Filters** button | Narrow results | Filter by flag, country, type and more. |
 | 4 | **Add to Library** button | Save it | Click **Add to Library**. The item now appears on your Library page. |
 
+## Tour 5 – Explore a vessel (URL: `/analytics/vessel/*`)
+Use Product Fruits' point-and-click selector (these controls have no stable ids).
+| # | Element | Title | Text |
+|---|---|---|---|
+| 1 | Page header (vessel name) | Vessel page | See the vessel's name, flag, IMO and type. |
+| 2 | **Overview** / **Events** tabs | Two views | Overview shows the map and timeline; Events lists port, zone and other events. |
+| 3 | Vessel details panel | Details | Expand a section such as Dimensions, Registry or Ownership. |
+| 4 | Map toolbar date range | Choose a period | Pick Previous 7/14/30/90 days or a Custom range. |
+| 5 | Replay bar | Replay | Press play to replay the vessel's movements. |
+| 6 | Three-dot menu (header) | Save it | Add the vessel to your Library. |
+
 ## Checklist – "Get started with Meridia"
 1. Sign in to Meridia (Tour 1)
 1b. Add your first vessel, port or zone to the Library (Tour 4)

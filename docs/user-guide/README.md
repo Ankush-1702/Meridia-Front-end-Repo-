@@ -11,7 +11,7 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 | 1 | Authentication | `/login`, `/reset-password` | How to log in · How to log in with a verification code (MFA) · How to reset your password · How to log out (see My Profile → Sign out) | **POC done** |
 | 2 | My Profile | `/analytics/account` | View profile · Time zone & theme · Notification pop-ups · Change password · Sign out | **Drafted** |
 | 3 | Library (home) | `/`, `/analytics/library` | Getting started · Add to Library · Search filters · Search & change view · Fleets (optional) · Custom zones shortcut | **Drafted** |
-| 4 | Vessels | `/analytics/vessel/:id` | Search/view a vessel | Planned |
+| 4 | Vessels | `/analytics/vessel/:id` | Open & read a vessel page · Switch vessels · Vessel details & save to Library · Track on the map · Replay movements · Event timeline · View & filter events · Events table columns · MTI score · PurpleTRAC screening | **Drafted (10)** |
 | 5 | Ports | `/analytics/port/:id` | Port details, congestion | Planned |
 | 6 | Zones / Custom zones | `/analytics/zone/:id`, `/analytics/custom-zones` | View zones, create/edit custom zone | Planned |
 | 7 | Fleets | `/analytics/fleet/new`, `/:id`, `/:id/edit` | Create/edit a fleet | Planned |
@@ -28,3 +28,13 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 - No admin-only screens exist in the front end; admin-related content is limited to the read-only **Role** / **Account ID** on My Profile. MFA self-setup is commented out of the UI, so it is intentionally not documented.
 - Product Fruits-ready output: `product-fruits/` (HTML articles + tour/checklist definitions).
 - Screenshots: pending test-environment URL.
+
+## Front-end issues spotted while drafting Vessels (for the product/dev team)
+- PurpleTRAC screening starts automatically each time the section is expanded; there is no Run button, and it times out after 160 s with a generic error.
+- Missing Speed/Course/Heading/Draught can display as `0` instead of `-` in the Events table; a missing Detained value shows "No".
+- Events tab silently drops an event type if its fetch fails; fixed 500-row limit, no paging; fixed 90-day window (no date picker on the tab).
+- Per-event-type column definition files (Port/Zone/STS/AIS gap/Discrepancy/PSC) are unused – the Events tab uses one unified table.
+- Toast says "bookmarks" while the UI says "Library".
+- MTI gauge never shows the score date although the API returns `updated_at`; "Unlock … / Available on request." upsell boxes also show for users who do have access.
+- Tooltip typo "avaialble" in the events panel; "Skip to start" replay button is very faint; several icon buttons lack `aria-label`.
+- Draught track option disabled ("Coming soon"); Risk/Transparency sidebar sections commented out; "Set as Homepage" not implemented.
