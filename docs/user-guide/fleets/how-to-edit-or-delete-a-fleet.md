@@ -1,4 +1,4 @@
-# How to edit, rename or delete a fleet
+# How to edit or delete a fleet
 
 Change a fleet's name, description or vessels, or delete it, from the Library or the fleet page.
 
