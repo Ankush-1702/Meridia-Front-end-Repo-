@@ -53,17 +53,6 @@ Use Product Fruits' point-and-click selector (these controls have no stable ids)
 | 5 | Replay bar | Replay | Press play to replay the vessel's movements. |
 | 6 | Three-dot menu (header) | Save it | Add the vessel to your Library. |
 
-## Tour 6 – Explore a port (URL: `/analytics/port/*`)
-Use Product Fruits' point-and-click selector (no stable ids).
-| # | Element | Title | Text |
-|---|---|---|---|
-| 1 | Page header (port name) | Port page | See the port's name and country. |
-| 2 | Tabs: **Overview**, **Congestion and Utilisation**, **Berths**, **Events** | Four views | Switch between live traffic, congestion charts, berths and port events. |
-| 3 | Overview map | Live traffic | See vessels in and heading to the port. |
-| 4 | Time range / date picker | Choose a period | Pick a preset or a custom range. |
-| 5 | **Events** → Inbound Vessels | Who's coming | See vessels heading to this port. |
-| 6 | Three-dot menu (header) | Save it | Add the port to your Library. |
-
 ## Checklist – "Get started with Meridia"
 1. Sign in to Meridia (Tour 1)
 1b. Add your first vessel, port or zone to the Library (Tour 4)
