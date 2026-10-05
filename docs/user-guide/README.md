@@ -15,7 +15,7 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 | 5 | Ports | `/analytics/port/:id` | Port details, congestion | Planned |
 | 6 | Zones / Custom zones | `/analytics/zone/:id`, `/analytics/custom-zones` | View zones, create/edit custom zone | Planned |
 | 7 | Fleets | `/analytics/fleet/new`, `/:id`, `/:id/edit` | Create/edit a fleet | Planned |
-| 8 | Notifications | `/analytics/notifications` | View/manage notifications | Planned |
+| 8 | Notifications | `/analytics/notifications` | Open & read your notifications · Filter & manage the Notifications page · Turn notifications on for a port or zone · Download your exports | **Drafted (4)** |
 | 9 | Meridia IQ (chat) | `/analytics/chat2` | Start a chat, chat history | Planned |
 | 10 | Company search | – | Search a company | Planned |
 
@@ -28,3 +28,11 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 - No admin-only screens exist in the front end; admin-related content is limited to the read-only **Role** / **Account ID** on My Profile. MFA self-setup is commented out of the UI, so it is intentionally not documented.
 - Product Fruits-ready output: `product-fruits/` (HTML articles + tour/checklist definitions).
 - Screenshots: pending test-environment URL.
+
+## Front-end issues spotted while drafting Notifications
+- **No vessel or fleet notification settings** – the settings button is deliberately hidden on Vessel and Fleet pages (ports and zones only).
+- No read/unread state, no mark-as-read, no per-row delete, no sorting/search on the Notifications page; only the **All / Ports / Zones** tabs. Dismiss (**x**) only clears the local bell panel / pop-ups.
+- Clicking a bell item, a pop-up, **View All** or **Refresh** clears the local list, pop-ups and bell count; **View All** also empties the bell's Downloads list.
+- Pressing Enter on a pop-up does not call "dismiss all", unlike a click.
+- PurpleTRAC Auto-Screening toggle is locked with "Contact your account manager" for accounts without the `ptrac-vessel-screening` / `auto-screening` group.
+- Show Notifications option labels are loaded from the backend (**[CONFIRM]** exact wording).
