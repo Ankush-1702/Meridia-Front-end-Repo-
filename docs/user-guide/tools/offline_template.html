@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meridia User Guide</title>
+<meta name="description" content="Step-by-step help for Meridia. Works offline.">
+<style>
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --text:#1f2933; --muted:#616e7c; --line:#dde1e6;
+  --accent:#d9480f; --accent-soft:#fff1e8; --link:#1c64f2; --code:#eef1f4;
+  --shot-bg:#fff7ed; --shot-line:#ea580c; --shot-text:#9a3412; --mark:#fff3bf; --mark-text:#5f3b00;
+  --th:#f1f3f5;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111418; --panel:#1a1f26; --text:#e6e9ee; --muted:#9aa5b1; --line:#2c333c;
+    --accent:#ff8a4c; --accent-soft:#2a1d14; --link:#7aa7ff; --code:#252c35;
+    --shot-bg:#2a1d14; --shot-line:#ff8a4c; --shot-text:#ffb98a; --mark:#4a3b00; --mark-text:#ffe08a; --th:#232a33;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111418; --panel:#1a1f26; --text:#e6e9ee; --muted:#9aa5b1; --line:#2c333c;
+  --accent:#ff8a4c; --accent-soft:#2a1d14; --link:#7aa7ff; --code:#252c35;
+  --shot-bg:#2a1d14; --shot-line:#ff8a4c; --shot-text:#ffb98a; --mark:#4a3b00; --mark-text:#ffe08a; --th:#232a33;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:var(--link)}
+header{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+header h1{font-size:18px;margin:0;white-space:nowrap}
+header h1 a{color:var(--text);text-decoration:none}
+header h1 span{color:var(--accent)}
+#menu{display:none;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:8px;padding:6px 10px;font-size:18px;cursor:pointer}
+#q{flex:1;max-width:520px;margin-left:auto;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);font-size:15px}
+#q:focus{outline:2px solid var(--accent);outline-offset:1px}
+.tools{display:flex;gap:8px;align-items:center}
+.btn{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:8px;padding:7px 10px;font-size:13px;cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+.layout{display:grid;grid-template-columns:300px 1fr;min-height:calc(100% - 56px)}
+nav{border-right:1px solid var(--line);background:var(--panel);padding:12px 8px 40px;overflow:auto;position:sticky;top:56px;height:calc(100vh - 56px)}
+nav details{margin:2px 0}
+nav summary{cursor:pointer;padding:8px 10px;border-radius:8px;font-weight:600;font-size:14px;list-style:none}
+nav summary::-webkit-details-marker{display:none}
+nav summary::before{content:"▸";display:inline-block;width:1.1em;color:var(--muted)}
+nav details[open] summary::before{content:"▾"}
+nav summary:hover{background:var(--bg)}
+nav a.item{display:block;padding:6px 10px 6px 30px;border-radius:8px;color:var(--text);text-decoration:none;font-size:14px;line-height:1.35}
+nav a.item:hover{background:var(--bg)}
+nav a.item.active{background:var(--accent-soft);color:var(--accent);font-weight:600}
+main{padding:28px 32px 80px;max-width:900px;width:100%}
+.crumb{color:var(--muted);font-size:13px;margin-bottom:6px}
+.crumb a{color:var(--muted)}
+article h1{font-size:28px;line-height:1.25;margin:0 0 12px}
+article h2{font-size:20px;margin:28px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--line)}
+article h3{font-size:17px;margin:20px 0 6px}
+article p{margin:8px 0}
+article ol,article ul{padding-left:1.4em}
+article li{margin:6px 0}
+article li>ul{margin:4px 0}
+code{background:var(--code);padding:1px 5px;border-radius:4px;font-size:.92em}
+.tw{overflow-x:auto;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}
+th{background:var(--th)}
+.shot{background:var(--shot-bg);border:1px dashed var(--shot-line);color:var(--shot-text);padding:10px 14px;border-radius:8px;margin:10px 0;font-size:14px}
+body.noshots .shot{display:none}
+mark.confirm{background:var(--mark);color:var(--mark-text);padding:0 4px;border-radius:4px;font-size:.88em;font-weight:600}
+a.xref{text-decoration:none;border-bottom:1px dotted var(--link)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:40px;border-top:1px solid var(--line);padding-top:16px}
+.pager a{flex:1;border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:10px 14px;text-decoration:none;color:var(--text)}
+.pager a:hover{border-color:var(--accent)}
+.pager small{display:block;color:var(--muted)}
+.pager .next{text-align:right}
+.banner{background:var(--accent-soft);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:10px 14px;margin:0 0 20px;font-size:14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-top:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.card h3{margin:0 0 6px;font-size:16px}
+.card h3 a{color:var(--text);text-decoration:none}
+.card ul{margin:6px 0 0;padding-left:1.1em;font-size:14px}
+.card li{margin:3px 0}
+.hits .hit{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0}
+.hits .hit a{font-weight:600;text-decoration:none}
+.hits .hit small{display:block;color:var(--muted)}
+.hits .hit p{margin:4px 0 0;font-size:14px;color:var(--muted)}
+.hits b{background:var(--mark);color:var(--mark-text);border-radius:3px;padding:0 2px}
+footer{color:var(--muted);font-size:12px;margin-top:40px}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr}
+  #menu{display:inline-block}
+  nav{display:none;position:fixed;left:0;top:56px;width:86%;max-width:340px;height:calc(100vh - 56px);z-index:30;box-shadow:4px 0 20px rgba(0,0,0,.25)}
+  body.navopen nav{display:block}
+  main{padding:20px 16px 60px}
+  header h1 span.long{display:none}
+  .tools .btn.hide-sm{display:none}
+}
+@media print{
+  header,nav,.pager,.tools,#menu,.banner{display:none!important}
+  .layout{display:block}
+  body{background:#fff;color:#000}
+  main{max-width:none;padding:0}
+  .shot{break-inside:avoid}
+  a{color:#000;text-decoration:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <button id="menu" aria-label="Open menu">☰</button>
+  <h1><a href="#/">Meridia <span class="long">User Guide</span></a></h1>
+  <input id="q" type="search" placeholder="Search the guide…" aria-label="Search the guide" autocomplete="off">
+  <div class="tools">
+    <button class="btn hide-sm" id="shots" title="Hide or show the screenshot placeholders">Hide screenshot notes</button>
+    <button class="btn hide-sm" id="theme" title="Switch light / dark">◐ Theme</button>
+    <button class="btn hide-sm" id="print" title="Print or save as PDF">Print</button>
+  </div>
+</header>
+<div class="layout">
+  <nav id="nav" aria-label="Guide contents"></nav>
+  <main id="main" tabindex="-1"></main>
+</div>
+<script id="data" type="application/json">/*DATA*/</script>
+<script>
+(function(){
+  "use strict";
+  var D = JSON.parse(document.getElementById("data").textContent);
+  var A = D.articles, J = D.journeys;
+  var order = []; J.forEach(function(j){ order = order.concat(j.articles); });
+  var $ = function(s){ return document.querySelector(s); };
+  var main = $("#main"), nav = $("#nav"), q = $("#q");
+
+  function esc(s){ return s.replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+  function safeGet(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } }
+  function safeSet(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+
+  /* ---------- navigation tree ---------- */
+  function buildNav(){
+    var h = "";
+    J.forEach(function(j){
+      h += '<details data-j="'+j.id+'"><summary>'+esc(j.id.split("-")[0])+" · "+esc(j.title)+'</summary>';
+      j.articles.forEach(function(id){ h += '<a class="item" href="#/'+id+'" data-id="'+id+'">'+esc(A[id].t)+'</a>'; });
+      h += "</details>";
+    });
+    nav.innerHTML = h;
+  }
+  function markActive(id){
+    nav.querySelectorAll("a.item").forEach(function(a){ a.classList.toggle("active", a.dataset.id===id); });
+    if(id){ var a = nav.querySelector('a.item[data-id="'+id+'"]'); if(a){ a.parentNode.open = true; if(a.scrollIntoView) a.scrollIntoView({block:"nearest"}); } }
+  }
+
+  /* ---------- views ---------- */
+  var BANNER = '<div class="banner"><b>Draft edition.</b> Highlighted notes like <mark class="confirm">[CONFIRM]</mark> mark details still being verified, and dashed boxes mark where screenshots will be added.</div>';
+  function home(){
+    var h = BANNER+"<h1>Meridia User Guide</h1><p>Step-by-step help for using Meridia. Pick a topic below, or search above. This page works offline.</p><div class=\"cards\">";
+    J.forEach(function(j){
+      h += '<div class="card"><h3><a href="#/'+j.articles[0]+'">'+esc(j.id.split("-")[0])+" · "+esc(j.title)+"</a></h3><ul>";
+      j.articles.forEach(function(id){ h += '<li><a href="#/'+id+'">'+esc(A[id].t)+"</a></li>"; });
+      h += "</ul></div>";
+    });
+    h += '</div><footer>Built '+esc(D.built)+" · "+order.length+" articles</footer>";
+    main.innerHTML = h; document.title = "Meridia User Guide"; markActive(null);
+  }
+  function article(id){
+    var a = A[id]; if(!a){ home(); return; }
+    var j = J.filter(function(x){ return x.id===a.j; })[0], i = order.indexOf(id);
+    var prev = i>0 ? order[i-1] : null, next = i<order.length-1 ? order[i+1] : null;
+    var h = '<div class="crumb"><a href="#/">Guide</a> › '+esc(j.id.split("-")[0])+" · "+esc(j.title)+"</div>"+BANNER;
+    h += "<article>"+a.h.replace(/^<!--[^>]*-->\n?/,"").replace(/^/,"<h1>"+esc(a.t)+"</h1>")+"</article>";
+    h += '<div class="pager">'+(prev?'<a class="prev" href="#/'+prev+'"><small>← Previous</small>'+esc(A[prev].t)+"</a>":"<span></span>")
+       + (next?'<a class="next" href="#/'+next+'"><small>Next →</small>'+esc(A[next].t)+"</a>":"<span></span>")+"</div>";
+    main.innerHTML = h; document.title = a.t+" – Meridia User Guide"; markActive(id);
+  }
+  function search(term){
+    var words = term.toLowerCase().split(/\s+/).filter(function(w){ return w.length>1; });
+    if(!words.length){ route(); return; }
+    var res = [];
+    order.forEach(function(id){
+      var a = A[id], t = a.t.toLowerCase(), x = a.x.toLowerCase(), score = 0, ok = true;
+      words.forEach(function(w){
+        var inT = t.indexOf(w)>-1, c = x.split(w).length-1;
+        if(!inT && !c){ ok = false; }
+        score += (inT?10:0) + Math.min(c,10);
+      });
+      if(ok) res.push({id:id,score:score});
+    });
+    res.sort(function(a,b){ return b.score-a.score; });
+    var h = "<h1>Search results</h1><p>"+res.length+" result"+(res.length===1?"":"s")+" for “"+esc(term)+"”.</p><div class=\"hits\">";
+    var re = new RegExp("("+words.map(function(w){ return w.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"); }).join("|")+")","ig");
+    res.slice(0,40).forEach(function(r){
+      var a = A[r.id], pos = a.x.toLowerCase().indexOf(words[0]);
+      var s = pos>-1 ? a.x.substr(Math.max(0,pos-70),180) : a.x.substr(0,160);
+      h += '<div class="hit"><a href="#/'+r.id+'">'+esc(a.t)+"</a><small>"+esc(J.filter(function(j){return j.id===a.j;})[0].title)+"</small><p>…"+esc(s).replace(re,"<b>$1</b>")+"…</p></div>";
+    });
+    main.innerHTML = h+"</div>"; document.title = "Search – Meridia User Guide"; markActive(null);
+  }
+  function route(){
+    var h = location.hash.replace(/^#\/?/,"");
+    if(!h) home(); else article(decodeURIComponent(h));
+    document.body.classList.remove("navopen");
+    window.scrollTo(0,0); main.focus({preventScroll:true});
+  }
+
+  /* ---------- controls ---------- */
+  var timer; q.addEventListener("input", function(){ clearTimeout(timer); timer = setTimeout(function(){ search(q.value.trim()); }, 150); });
+  q.addEventListener("keydown", function(e){ if(e.key==="Escape"){ q.value=""; route(); } });
+  document.addEventListener("keydown", function(e){ if(e.key==="/" && document.activeElement!==q){ e.preventDefault(); q.focus(); } });
+  $("#menu").addEventListener("click", function(){ document.body.classList.toggle("navopen"); });
+  $("#print").addEventListener("click", function(){ window.print(); });
+  var shotsBtn = $("#shots");
+  function applyShots(hide){ document.body.classList.toggle("noshots", hide); shotsBtn.textContent = hide ? "Show screenshot notes" : "Hide screenshot notes"; }
+  shotsBtn.addEventListener("click", function(){ var hide = !document.body.classList.contains("noshots"); applyShots(hide); safeSet("mg-hideshots", hide?"1":"0"); });
+  applyShots(safeGet("mg-hideshots")==="1");
+  var root = document.documentElement, th = safeGet("mg-theme"); if(th) root.setAttribute("data-theme", th);
+  $("#theme").addEventListener("click", function(){
+    var dark = root.getAttribute("data-theme")==="dark" || (!root.getAttribute("data-theme") && matchMedia("(prefers-color-scheme: dark)").matches);
+    var n = dark ? "light" : "dark"; root.setAttribute("data-theme", n); safeSet("mg-theme", n);
+  });
+  window.addEventListener("hashchange", function(){ q.value=""; route(); });
+  buildNav(); route();
+})();
+</script>
+</body>
+</html>
