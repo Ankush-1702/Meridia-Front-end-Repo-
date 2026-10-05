@@ -10,7 +10,7 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 |---|--------|-------|----------|--------|
 | 1 | Authentication | `/login`, `/reset-password` | How to log in · How to log in with a verification code (MFA) · How to reset your password · How to log out (see My Profile → Sign out) | **POC done** |
 | 2 | My Profile | `/analytics/account` | View profile · Time zone & theme · Notification pop-ups · Change password · Sign out | **Drafted** |
-| 3 | Library (home) | `/`, `/analytics/library` | Landing page overview | Planned |
+| 3 | Library (home) | `/`, `/analytics/library` | Getting started · Add to Library · Search filters · Search & change view · Fleets (optional) · Custom zones shortcut | **Drafted** |
 | 4 | Vessels | `/analytics/vessel/:id` | Search/view a vessel | Planned |
 | 5 | Ports | `/analytics/port/:id` | Port details, congestion | Planned |
 | 6 | Zones / Custom zones | `/analytics/zone/:id`, `/analytics/custom-zones` | View zones, create/edit custom zone | Planned |

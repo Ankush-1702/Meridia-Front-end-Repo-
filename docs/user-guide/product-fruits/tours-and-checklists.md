@@ -33,8 +33,18 @@ Step 2 screen (after Continue; trigger on element appearing):
 | 5 | `#confirmNewPassword` | Confirm it | Re-type the same password. |
 | 6 | `button[type="submit"]` | Continue | Click **Continue**, then sign in with your new password. |
 
+## Tour 4 – Add your first item to the Library (URL: `/analytics/library`)
+No stable ids exist on these controls; use Product Fruits' point-and-click selector (or ask engineering for `data-pf` ids).
+| # | Element | Title | Text |
+|---|---|---|---|
+| 1 | **Add** button (header, top right) | Add items | Click **Add**, then choose **Vessel**, **Port** or **Zone** under *Find and add*. |
+| 2 | Search box (in the window, `input[placeholder^="Search"]`) | Search | Type at least 3 characters. Use the dropdown on the left to search by IMO, MMSI, UN/LOCODE, etc. |
+| 3 | **Filters** button | Narrow results | Filter by flag, country, type and more. |
+| 4 | **Add to Library** button | Save it | Click **Add to Library**. The item now appears on your Library page. |
+
 ## Checklist – "Get started with Meridia"
 1. Sign in to Meridia (Tour 1)
+1b. Add your first vessel, port or zone to the Library (Tour 4)
 2. Choose your time zone and theme (My Profile → General) – link: `/analytics/account`
 3. Decide on notification pop-ups (My Profile → Notifications)
 4. Review your account details (My Profile → Personal)
