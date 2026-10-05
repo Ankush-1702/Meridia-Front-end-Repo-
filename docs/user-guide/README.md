@@ -38,4 +38,4 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 - Locked MTI / PurpleTRAC rows show a hover card with an "Unlock" prompt, "Available on request." and a **More about …** link (external page) – there is no "Contact us" box on click in the app code.
 - Events: failed fetch silently shows an empty table; Port State Control **Defects** may show blank instead of "-"; **Detained** shows "No" when missing; column named **Location Type** here but **Zone Type** in vessel events; tooltip typo "avaialble".
 - Cancel while editing always opens the Discard dialog even with no changes; the Library delete modal's cancel button label is lowercase ("cancel").
-- The 1,000-vessel cap is hard-coded, while preview text says "your N-vessel limit" **[CONFIRM plan limits]**.
+- The 1,000-vessel cap per fleet is fixed (confirmed by product); the preview text still says "your N-vessel limit", which could be reworded.

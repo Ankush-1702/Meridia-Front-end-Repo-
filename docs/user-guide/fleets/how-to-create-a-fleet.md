@@ -7,7 +7,7 @@ Create a named group of vessels so you can monitor them together.
 ## Before you begin
 - You need the IMO numbers or names of the vessels you want to add.
 - A fleet needs a name (at least 3 characters) and at least one vessel.
-- A fleet can hold up to 1,000 vessels. **[CONFIRM]** whether this limit differs by plan; the screen refers to "your" limit.
+- A fleet can hold up to **1,000 vessels**. This limit is the same for every account.
 
 ## Steps
 1. In the Library, click **Add**, then under **Create new** click **Fleet**.
