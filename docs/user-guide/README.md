@@ -16,7 +16,7 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 | 6 | Zones / Custom zones | `/analytics/zone/:id`, `/analytics/custom-zones` | View zones, create/edit custom zone | Planned |
 | 7 | Fleets | `/analytics/fleet/new`, `/:id`, `/:id/edit` | Create/edit a fleet | Planned |
 | 8 | Notifications | `/analytics/notifications` | View/manage notifications | Planned |
-| 9 | Meridia IQ (chat) | `/analytics/chat2` | Start a chat, chat history | Planned |
+| 9 | Meridia IQ (chat) | `/analytics/chat2` | Start a chat · Read answers, tables & maps · Manage chat history · Ask IQ about a vessel, port or zone. *Only the current version is documented; the older chat version is unreachable.* | **Drafted (4)** |
 | 10 | Company search | – | Search a company | Planned |
 
 ## Screenshot priority
@@ -38,3 +38,12 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 - Dead code: `inboundVesselsMock.ts` (1970 dates), standalone `InboundVessels` table, `utils/ColDefs.tsx`, `createBerthEventsColDef`, `portsData.ts` (likely).
 - Toast says "bookmarks" (UI says "Library"), and its wording may be inverted after add/remove.
 - Overview "Performance (Previous 30 days)" excludes today; port page has no port switcher.
+
+## Front-end issues spotted while drafting Meridia IQ
+- Only the current version (`/analytics/chat2`) is reachable: `/analytics/chats/*` redirects to it, so the older chat UI and its "Switch to Meridia IQ 2.0" toggle are dead code; the V1/V2 switcher component is unused.
+- **Ask IQ sends the prompt automatically** (it navigates with the prompt and sends it, no chance to edit first). Ask IQ buttons are commented out in the fleet page and fleet event panel header.
+- The six "I can help you with things like…" prompts on the welcome screen are plain text, not clickable. No stop, regenerate, feedback, copy, search, rename or pin exists; the chat-list menu offers only **Delete**.
+- Chat list fetch is limited to 20 with no paging (older chats may be unreachable); titles are cut to 19 characters + "…".
+- Errors show raw server text ("Error: …"); an empty turn shows "No response text".
+- `MARA2_API_URL` falls back to `http://localhost:8000` if the env var is missing; a stale sidebar "New Chat" item pointing to `/analytics/chats` exists (hidden when the sidebar is expanded).
+- Access: group `meridia-iq` or `mara`; the article carries **[CONFIRM]** on how access is granted and on what IQ can answer.
