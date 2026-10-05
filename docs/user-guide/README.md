@@ -19,6 +19,9 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 | 9 | Meridia IQ (chat) | `/analytics/chat2` | Start a chat, chat history | Planned |
 | 10 | Company search (Beta) | launched from the company icon beside ownership names on a vessel page | Open company search from a vessel page · Read company details (contacts, sources, export). *There is no standalone company search in the app.* | **Drafted (2)** |
 
+| 9 | Meridia IQ (chat) | `/analytics/chat2` | Start a chat · Read answers, tables & maps · Manage chat history · Ask IQ about a vessel, port or zone. *Only the current version is documented; the older chat version is unreachable.* | **Drafted (4)** |
+| 10 | Company search | – | Search a company | Planned |
+
 ## Screenshot priority
 1. **P1 (POC):** Login page, Login filled in, MFA code screen, Reset – enter email, Reset – code + new password (incl. requirements tooltip), success toast on Login, landing page after login.
 2. **P2:** My Account → Security (Change password, MFA), Logout control.
@@ -33,3 +36,12 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 - **No standalone company search, result list, company profile or fleet view exists** – only a Beta "company contact details" lookup launched from the company icon on the five Ownership rows (Operator, Registered owner, Technical manager, Ship manager, Group beneficial owner) of the vessel details panel (Overview tab). The sidebar **Search** has no company tab.
 - **No entitlement gate in the front end** – the icon shows for any non-empty ownership name (conflicts with the "entitled accounts only" decision – please confirm).
 - The "DOC company" row in Registry has no company icon; the Export menu is hidden for empty results but Refresh is still shown; results are cached in the browser for 24 hours per company name + IMO; the address map silently disappears if geocoding fails; requests time out after about 160 s.
+
+## Front-end issues spotted while drafting Meridia IQ
+- Only the current version (`/analytics/chat2`) is reachable: `/analytics/chats/*` redirects to it, so the older chat UI and its "Switch to Meridia IQ 2.0" toggle are dead code; the V1/V2 switcher component is unused.
+- **Ask IQ sends the prompt automatically** (it navigates with the prompt and sends it, no chance to edit first). Ask IQ buttons are commented out in the fleet page and fleet event panel header.
+- The six "I can help you with things like…" prompts on the welcome screen are plain text, not clickable. No stop, regenerate, feedback, copy, search, rename or pin exists; the chat-list menu offers only **Delete**.
+- Chat list fetch is limited to 20 with no paging (older chats may be unreachable); titles are cut to 19 characters + "…".
+- Errors show raw server text ("Error: …"); an empty turn shows "No response text".
+- `MARA2_API_URL` falls back to `http://localhost:8000` if the env var is missing; a stale sidebar "New Chat" item pointing to `/analytics/chats` exists (hidden when the sidebar is expanded).
+- Access: group `meridia-iq` or `mara`; the article carries **[CONFIRM]** on how access is granted and on what IQ can answer.
