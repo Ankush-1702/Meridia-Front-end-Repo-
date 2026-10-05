@@ -14,7 +14,7 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 | 4 | Vessels | `/analytics/vessel/:id` | Search/view a vessel | Planned |
 | 5 | Ports | `/analytics/port/:id` | Port details, congestion | Planned |
 | 6 | Zones / Custom zones | `/analytics/zone/:id`, `/analytics/custom-zones` | View zones, create/edit custom zone | Planned |
-| 7 | Fleets | `/analytics/fleet/new`, `/:id`, `/:id/edit` | Create/edit a fleet | Planned |
+| 7 | Fleets | `/analytics/fleet/new`, `/:id`, `/:id/edit` | Create a fleet · Edit or delete a fleet · Open & read a fleet page · View your fleet on the map · Read fleet composition · View fleet events. *Filter-based vessel adding held in `fleets/_unpublished/` – it does not exist in the app (filters only narrow the view).* | **Drafted (6 live + 1 held)** |
 | 8 | Notifications | `/analytics/notifications` | View/manage notifications | Planned |
 | 9 | Meridia IQ (chat) | `/analytics/chat2` | Start a chat, chat history | Planned |
 | 10 | Company search | – | Search a company | Planned |
@@ -28,3 +28,14 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 - No admin-only screens exist in the front end; admin-related content is limited to the read-only **Role** / **Account ID** on My Profile. MFA self-setup is commented out of the UI, so it is intentionally not documented.
 - Product Fruits-ready output: `product-fruits/` (HTML articles + tour/checklist definitions).
 - Screenshots: pending test-environment URL.
+
+## Front-end issues spotted while drafting Fleets
+- **Only static fleets exist** – dynamic fleets are switched off (type hard-coded `static`); dynamic-only preview strings are unreachable.
+- **Rename is not available** from the Library card or fleet page (a rename dialog exists but is not wired); renaming works only via Edit.
+- Overview list **Export Data (CSV)** downloads a file named `berths-export.csv` (copy-paste from Berths). Composition **Export Image (PNG)** does nothing in "Show all" view for the Flag / Port of registry / Country of build / Builder charts; the Composition **Export** button is commented out.
+- Composition "Based on X of Y vessels" compares against the whole fleet's count, not the filtered count.
+- Ask IQ buttons on the fleet page and in the event panel header are commented out; the map legend **Flag** tab is commented out; the notify bell on fleet cards is commented out; no fleet notification settings exist.
+- Locked MTI / PurpleTRAC rows show a hover card with an "Unlock" prompt, "Available on request." and a **More about …** link (external page) – there is no "Contact us" box on click in the app code.
+- Events: failed fetch silently shows an empty table; Port State Control **Defects** may show blank instead of "-"; **Detained** shows "No" when missing; column named **Location Type** here but **Zone Type** in vessel events; tooltip typo "avaialble".
+- Cancel while editing always opens the Discard dialog even with no changes; the Library delete modal's cancel button label is lowercase ("cancel").
+- The 1,000-vessel cap is hard-coded, while preview text says "your N-vessel limit" **[CONFIRM plan limits]**.
