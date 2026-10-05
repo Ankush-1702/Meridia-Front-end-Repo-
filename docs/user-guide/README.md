@@ -90,3 +90,9 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 - Errors show raw server text ("Error: …"); an empty turn shows "No response text".
 - `MARA2_API_URL` falls back to `http://localhost:8000` if the env var is missing; a stale sidebar "New Chat" item pointing to `/analytics/chats` exists (hidden when the sidebar is expanded).
 - Access: group `meridia-iq` or `mara`; the article carries **[CONFIRM]** on how access is granted and on what IQ can answer.
+
+## Where things are
+- `product-fruits/knowledge-base/` – **all articles as Markdown, grouped by user journey** (01 Getting started → 10 Meridia IQ) with an `INDEX.md`; paste in that order. Regenerate with `python3 tools/build_journeys.py`.
+- `product-fruits/articles/` – paste-ready HTML for each article; `product-fruits/tours-and-checklists.md` – in-app tours.
+- `CONFIRM-ITEMS.md` / `CONFIRM-ITEMS.csv` – **every open [CONFIRM] item in one flat list** (regenerate with `python3 tools/list_confirms.py`); `CONFIRM-LIST.md` – the same questions grouped by owner (PM / backend / front-end / support / QA).
+
