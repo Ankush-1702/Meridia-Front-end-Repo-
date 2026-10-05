@@ -52,6 +52,7 @@ Use Product Fruits' point-and-click selector (these controls have no stable ids)
 | 4 | Map toolbar date range | Choose a period | Pick Previous 7/14/30/90 days or a Custom range. |
 | 5 | Replay bar | Replay | Press play to replay the vessel's movements. |
 | 6 | Three-dot menu (header) | Save it | Add the vessel to your Library. |
+
 ## Tour 6 – Explore a port (URL: `/analytics/port/*`)
 Use Product Fruits' point-and-click selector (no stable ids).
 | # | Element | Title | Text |
