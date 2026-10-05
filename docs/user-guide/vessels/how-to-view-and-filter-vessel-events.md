@@ -4,7 +4,7 @@ Use the **Events** tab on a vessel page to see a table of that vessel's recent p
 
 ## Before you begin
 - Open a vessel page (`/analytics/vessel/:id`).
-- The table covers the last 90 days only. It has no date picker. Use **Export** for other periods. **[CONFIRM: that 90 days is the intended fixed window]**
+- The table covers the last 90 days only. It has no date picker. Use **Export** for other periods.
 
 ## Steps
 1. Select the **Events** tab, next to **Overview**.

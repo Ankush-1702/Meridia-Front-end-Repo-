@@ -13,4 +13,4 @@ See the personal details linked to your Meridia account.
 ## Good to know
 - These details are read-only. To change your name, email or role, contact your Meridia account administrator or support. **[CONFIRM: admin/support process]**
 - Your **Role** and **Account ID** are useful to quote when contacting support.
-- Some accounts open on My Profile after login because they don't have access to the home page (Library). **[CONFIRM wording for customers]**
+- Meridia content (such as the Library) is visible only to accounts and users that have the **Meridia** feature enabled. If it isn't enabled for you, contact your account administrator or Pole Star.

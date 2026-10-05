@@ -3,7 +3,7 @@
 Use the **MTI score** section on a vessel's page to see a 0-5 transparency and compliance score at a glance.
 
 ## Before you begin
-- The MTI score is available only if your account has MTI access. Without access, the section shows **Unlock MTI Score** and **Available on request.** **[CONFIRM: which plan or licence tier grants access]**
+- The MTI score is available only to accounts and users that are entitled to MTI. Without access, the section shows **Unlock MTI Score** and **Available on request.**
 - Open a vessel from the Library or by searching, so you are on its **Overview** tab.
 
 ## Steps
@@ -25,7 +25,7 @@ A gauge shows the vessel's score between 0 and 5. Below it, a box titled **See w
 - The gauge colours run red, orange, yellow, light green and green from low to high. The screen shows no named risk bands or thresholds. **[CONFIRM: any official score bands or what counts as a good or poor score]**
 - How the score is calculated, and how often it is refreshed, is not shown on screen. **[CONFIRM]**
 - If a vessel has no score, you see an **Unscored** label and the text "No MTI score is available for this vessel yet." and "Scores appear once there is enough activity data to assess it."
-- The breakdown and ranking comparison are not shown in the app. The box says they are **Available on request.** **[CONFIRM: how customers request this]**
+- The breakdown and ranking comparison are not shown in the app. The box says they are **Available on request** – click the box to see the **Contact us** details.
 
 ## Troubleshooting
 | Problem | What to do |

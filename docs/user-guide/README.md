@@ -34,6 +34,7 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 - Missing Speed/Course/Heading/Draught can display as `0` instead of `-` in the Events table; a missing Detained value shows "No".
 - Events tab silently drops an event type if its fetch fails; fixed 500-row limit, no paging; fixed 90-day window (no date picker on the tab).
 - Per-event-type column definition files (Port/Zone/STS/AIS gap/Discrepancy/PSC) are unused – the Events tab uses one unified table.
+- Product decisions (confirmed): MTI, PurpleTRAC and Ask IQ are visible only to entitled accounts/users; locked boxes lead to Contact us details on click; users without the Meridia feature see no Meridia content; the Events tab's fixed 90-day window is not ideal but stays as-is for now.
 - Toast says "bookmarks" while the UI says "Library".
 - MTI gauge never shows the score date although the API returns `updated_at`; "Unlock … / Available on request." upsell boxes also show for users who do have access.
 - Tooltip typo "avaialble" in the events panel; "Skip to start" replay button is very faint; several icon buttons lack `aria-label`.

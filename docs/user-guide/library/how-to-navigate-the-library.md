@@ -11,5 +11,5 @@ The Library is your Meridia home page. It holds the vessels, ports, zones and (i
 
 ## Good to know
 - The Library only shows items you have added. A new account shows **No items – Add items to your library to get started** with a **+ Add items** button. See **How to add a vessel, port or zone to your Library**.
-- If you can't see the Library after login, your account may not include it – you will land on **My Profile** instead. Contact your account administrator. **[CONFIRM wording]**
+- The Library is available only to accounts and users that have the **Meridia** feature enabled. If it isn't enabled for you, you won't be able to see Meridia content. Contact your account administrator or Pole Star.
 - The selected tab is kept in the page address (`?tab=Vessels`), so you can bookmark a tab.

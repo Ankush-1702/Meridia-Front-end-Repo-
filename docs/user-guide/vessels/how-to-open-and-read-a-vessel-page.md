@@ -35,9 +35,9 @@ You see the vessel's identity, its details, and its recent track and events.
 - **Registry** shows **Built**, **Shipbuilder**, **Country of build**, **Hull type**, **Port of registry**, **Classification**, **P&I Club** and **DOC company**.
 - **Ownership** shows **Operator**, **Registered owner**, **Technical manager**, **Ship manager** and **Group beneficial owner**. A company search icon appears next to a company name.
 - **Next Port** shows **Destination** and **ETA**. **[CONFIRM]** the source and freshness of this data.
-- **PurpleTRAC screening** and **MTI score** show an "Unlock" message if your account does not have access. **[CONFIRM]** the exact access wording for customers; the page says "Available on request."
+- **PurpleTRAC screening** and **MTI score** show an "Unlock" message with "Available on request." if your account or user is not entitled to them. Click the message to see the **Contact us** details.
 - Open the three-dot menu in the header to choose **Add to Library** or **Remove from Library**.
-- **Ask IQ** appears next to the tabs only if it is enabled for your account. **[CONFIRM]** availability.
+- **Ask IQ** appears next to the tabs only if your account or user is entitled to Ask IQ.
 - The header shows a refresh control. **[CONFIRM]** its label; it reloads the date range used for the map.
 
 ## Troubleshooting

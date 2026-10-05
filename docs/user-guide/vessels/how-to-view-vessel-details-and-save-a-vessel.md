@@ -4,7 +4,7 @@ Use the vessel page to see a vessel's particulars, switch to another vessel, sav
 
 ## Before you begin
 - Open a vessel from the Library (**Library** > **Vessels**) or by searching. The page is at an address ending in /analytics/vessel/ followed by the vessel ID.
-- **Ask IQ** appears only if your account has access to it. **[CONFIRM: which plan includes Ask IQ]**
+- **Ask IQ** appears only if your account or user is entitled to it.
 
 ## Steps
 1. Open the vessel. The header shows the vessel name, and below it the IMO, flag and vessel type.
