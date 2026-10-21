@@ -39,12 +39,11 @@ The cards and charts describe the vessels that match your filters, and every cha
 ## Good to know
 
 - Bar labels show the number of vessels. The tooltip adds the share of the filtered total.
-- Grey bars are labelled "unknown", or values outside your current flag or class selection. **[CONFIRM]** exactly when grey is used.
+- Grey bars are labelled "unknown", or values outside your current flag or class selection. Grey is used when the values are unknown.
 - **Total DWT** and the **Size** (DWT) and **Dimensions** charts may show "Based on X of Y vessels". The info icon explains that only some vessels have adequate data. If none do, you see "No DWT data available" (or the matching measure).
-- **[CONFIRM]** how **Average age**, **Total DWT**, the size bands in **Class** and **Age profile**, and the **Share** percentages are calculated, and which units **Dimensions** uses.
 - The CSV has three columns: the chart name, **Vessels** and **Percentage**. The file is named after the fleet and chart.
 - There is no **MTI Score** filter on this tab.
-- If you untick every value in a filter, the page shows no data. A planned **Export** button for the whole tab is switched off in the code.
+- If you untick every value in a filter, the page shows no data.
 
 ## Troubleshooting
 
@@ -53,5 +52,5 @@ The cards and charts describe the vessels that match your filters, and every cha
 | A chart shows **No data available** | Select **Reset Filters** or refresh the page. |
 | **View vessels** is greyed out | No vessels match the filters. Reset them. |
 | **Show all** is greyed out | The chart has five or fewer values. |
-| **Export Image (PNG)** does nothing in **Show all** view | Switch back to **Show top 5** and export again. **[CONFIRM]** |
+| **Export Image (PNG)** does not work in **Show all** view | Switch back to **Show top 5** and export again. |
 | Numbers do not match **Overview** | Each tab has its own filters. Check both. |

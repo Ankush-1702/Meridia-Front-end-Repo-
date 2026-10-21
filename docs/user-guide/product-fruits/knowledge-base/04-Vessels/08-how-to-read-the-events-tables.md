@@ -31,13 +31,13 @@ Event types: **Area Arrival**, **Arrival**, **Departure**, **Area Departure**.
 | Location | Name of the port or port area. |
 | Country | Country of the port, with its flag. |
 | UN/LOCODE | The port's UN/LOCODE. |
-| Zone Type | The kind of area the event relates to. **[CONFIRM: values shown]** |
+| Zone Type | The kind of area the event relates to: Emission Control Areas (ECA), JWC War Zones, Waterways, Jurisdictional, IBF, Regulatory, Ports or Custom. |
 | Speed | Vessel speed at the event, in knots (kn). |
 | Course | Direction of travel over the ground, in degrees. |
 | Duration (hours) | Not filled in for port events (shows -). |
 | Heading | Hidden. Direction the bow points, in degrees. |
 | Draught | Hidden. Depth of the vessel in the water, in metres. |
-| Navigational Status (Status) | Hidden. The status the vessel reported, such as at anchor. **[CONFIRM: wording]** |
+| Navigational Status (Status) | Hidden. The status the vessel reported, such as at anchor. |
 | Reported Destination | Hidden. Destination typed in by the crew. |
 | Reported ETA | Hidden. Arrival time reported by the vessel. |
 
@@ -58,13 +58,13 @@ Event types: **Zone Entry**, **Zone Exit**.
 Row click: opens the zone page.
 
 ### STS (ship-to-ship) pairings
-Event type: **STS Pairing**. A pairing is a period when this vessel was close to another vessel, which may indicate a ship-to-ship transfer. **[CONFIRM: definition used by the data provider]**
+Event type: **STS Pairing**. A pairing is a period when this vessel was close to another vessel, which may indicate a ship-to-ship transfer.
 
 | Column | Meaning |
 |---|---|
 | TimeStamp | When the pairing started. |
 | Duration (hours) | How long the pairing lasted. |
-| STS Type | Hidden. The category of pairing. **[CONFIRM: possible values]** |
+| STS Type | Hidden. The category of pairing: Cargo, Bunkering, Fishing or Unknown. |
 | Paired Vessel | Hidden. Name of the other vessel. |
 | Paired IMO | Hidden. IMO number of the other vessel. |
 | STS Ended (UTC/System) | Hidden. When the pairing ended. |
@@ -81,11 +81,11 @@ Event type: **AIS Gap**. A period when the vessel's AIS transmissions stopped an
 | Duration (hours) | Length of the gap. |
 | Gap Stopped (UTC/System) | Hidden. When the signal stopped. |
 | Gap Resumed (UTC/System) | Hidden. When the signal came back. |
-| Draught Change | Hidden. Difference in reported draught across the gap, in metres. Can hint at loading or unloading. **[CONFIRM: sign convention]** |
+| Draught Change | Hidden. Difference in reported draught across the gap, in metres. A plus sign (+) means loading and a minus sign (-) means unloading. |
 | Navigational Status (Status), Navigational Status (Code) | Hidden. Status reported when the signal stopped. |
 
 ### Positional discrepancies
-Event type: **Positional Discrepancy**. A period when the vessel's reported position disagreed with other evidence of where it was. **[CONFIRM: how discrepancies are detected]**
+Event type: **Positional Discrepancy**. A period when the vessel's reported position disagreed with other evidence of where it was.
 
 | Column | Meaning |
 |---|---|
@@ -118,9 +118,8 @@ Event type: **Port State Control**. An inspection of the vessel by a port author
 You can tell, for each event type, which columns to read and which to ignore.
 
 ## Good to know
-- The code also contains separate, longer column sets for each event type. They include **Port Name**, **Sub Type**, **Zone Name**, **Started At**, **Stopped At**, **Stopped Reporting At**, **Resumed Reporting At**, **Gap Duration (hours)**, **Expanded Inspection**, **Follow up Inspection** and similar. They are not used in the vessel **Events** tab. **[CONFIRM: whether they appear anywhere else]**
-- **Speed**, **Course**, **Heading** and **Draught** can show 0 when the data source gave no value. **[CONFIRM]**
-- Export files include all available columns and use UTC times. **[CONFIRM: export column list]**
+- **Speed**, **Course**, **Heading** and **Draught** can show 0 when the data source gave no value. A **Course** or **Heading** of 0 should be treated with care.
+- Export files include all selected or applicable columns and use UTC times.
 
 ## Troubleshooting
 | Problem | What to do |

@@ -22,9 +22,9 @@ The shape appears on the map and the map zooms to it. The type switches to **Pol
 ## Good to know
 - While a file is loaded, the type tabs, drawing button and coordinate fields are locked.
 - To start over, click the **✕** next to the file name (tooltip **Remove file and clear data**). This clears the shape and name.
-- Circles can come from a GeoJSON point with a radius, or from WKT `POINT` or `CIRCLE`. If no radius is given, 1000 m is used **[CONFIRM: confirm this default is intended]**.
+- Circles can come from a GeoJSON point with a radius, or from WKT `POINT` or `CIRCLE`. Always include a radius for circles.
 - The same size limits apply as when drawing (3 to 100 points, circle radius 100 m to 1,000 km).
-- Maximum file size **[CONFIRM]**.
+- The maximum file size is 1 MB.
 
 ## Troubleshooting
 | Problem | What to do |

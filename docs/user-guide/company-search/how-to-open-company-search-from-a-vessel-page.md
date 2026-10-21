@@ -5,6 +5,7 @@ Use the company icon beside an ownership name on a vessel page to run a Beta AI 
 ## Before you begin
 - Open a vessel page on the **Overview** tab and keep the left-hand vessel details panel open.
 - The icon only appears beside a company name that is filled in. Rows showing a dash (-) have no icon.
+- Company search is available on request only. If you do not see the icon, contact your account team.
 - This is a Beta feature. Results are produced with AI and web search and may be incomplete or inaccurate.
 
 ## Steps
@@ -25,15 +26,14 @@ A window opens with the company name, your chosen role for this vessel (for exam
 - After a search is done, the icon changes to an eye. Its tooltip reads **View company details**, and selecting it reopens the result without a new search.
 - If the same company appears in more than one ownership row on this vessel, the other rows switch to the eye icon when the first search finishes.
 - Results are kept for the current browser session for up to 24 hours. Use **Refresh** inside the window to search again.
-- If you closed the window while a search was running, the result is saved and the eye icon appears when it completes. **[CONFIRM: whether the window then opens automatically or only the icon changes]**
+- If you closed the window while a search was running, the result is saved. When the search completes, the window opens and the icon changes to the eye.
 - A search that takes too long stops after about 2 and a half minutes.
 - This search starts from a vessel's ownership rows only. The **Search** item in the main sidebar searches vessels, ports and zones, not companies.
-- **[CONFIRM: whether this feature is limited to certain accounts or subscriptions. Nothing in the page limits it.]**
 
 ## Troubleshooting
 | Problem | What to do |
 |---|---|
-| There is no icon beside the name | The company name is empty (shown as -). Icons appear only for named companies. |
+| There is no icon beside the name | The company name is empty (shown as -). Icons appear only for named companies, and only if company search is enabled for your account. |
 | A red message appears saying the search failed | Select the icon and try again. Messages include "Company search failed. Please try again." and "Company search timed out. Please try again." |
 | The icon is greyed with a spinner | A search is still running. Wait for it to finish. |
 | The window says "No reliable results found for this company" | See "How to read company details". Verify through official sources. |

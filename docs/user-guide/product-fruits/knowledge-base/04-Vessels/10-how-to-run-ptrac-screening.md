@@ -18,14 +18,14 @@ Use the **PurpleTRAC screening** section to check a vessel against global sancti
 6. To read more about the service, select **More about PurpleTRAC**. It opens in a new browser tab.
 
 ## Expected result
-The **Overall** row shows one badge: **Ok** (green), **Warning** (amber), **Critical** (red) or **Unscored** (grey). **[CONFIRM: exact meaning of each result and what triggers Warning or Critical]**
+The **Overall** row shows one badge: **Ok** (green), **Warning** (amber), **Critical** (red) or **Unscored** (grey).
 
 ## Good to know
 - Hover over the help icon beside the section name for the tooltip: sanctions and compliance screening against global watchlists, powered by PurpleTRAC.
 - There are no settings or filters for the screening in this section.
-- The screening runs again each time you expand the section for a vessel that has no screening currently running. **[CONFIRM: whether each run is saved or counted against a screening allowance]**
-- The code behind the screen says results are kept if you navigate away. **[CONFIRM: how long results are retained and where to find them later]**
-- A box named **Get the full breakdown** says you can see every check behind the result (sanctions, PSC history, ship movement and more). It is marked **Available on request** – select **More about PurpleTRAC** to learn more and find contact details **[CONFIRM: the app shows a hover card with a More about PurpleTRAC link, not a Contact us box]**.
+- The screening runs again each time you expand the section for a vessel that has no screening currently running. Each run is saved.
+- Results are kept if you navigate away. They are kept for 24 hours, after which the vessel is screened again.
+- A box named **Get the full breakdown** says you can see every check behind the result (sanctions, PSC history, ship movement and more). It is marked **Available on request** – select **More about PurpleTRAC** to learn more and find contact details.
 - If no result arrives within about 2.5 minutes, the section shows an error.
 
 ## Troubleshooting
@@ -34,4 +34,4 @@ The **Overall** row shows one badge: **Ok** (green), **Warning** (amber), **Crit
 | **Unlock PurpleTRAC Screening** appears | Your account lacks access. Select **More about PurpleTRAC** or contact your account team. |
 | "PurpleTRAC screening is temporarily unavailable." | Select **Retry** to run the screening again. |
 | Screening seems slow | Wait, or leave the page; the screen says results will be saved. |
-| Result is **Unscored** | The screen gives no reason. **[CONFIRM]** |
+| Result is **Unscored** | The data needed to screen the vessel is not available, or the vessel's IMO number is not on the watchlist. |

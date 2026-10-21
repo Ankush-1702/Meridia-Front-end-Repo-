@@ -29,13 +29,13 @@ Choose which events trigger notifications, and whether you also get emails.
 The button turns orange and your changes save automatically after a moment. There is no Save button.
 
 ## Good to know
-- Turning **Enable Live Notifications** on switches on all events for that item **[CONFIRM defaults]**. Turning it off switches off all events and email.
+- Turning **Enable Live Notifications** on switches on all events for that item. Turning it off switches off all events and email.
 - If you switch off all port events, or both zone events, **Enable Live Notifications** turns off.
 - Turning **PurpleTRAC Auto-Screening** on selects all four severity levels. Severity applies to email alerts, and only when PurpleTRAC Auto-Screening is on.
 - **Immediately** on large zones and ports may trigger a large amount of emails.
 - **Send at** is the first email time; later emails follow the **Emails per day** interval. It is shown in your local time.
 - If your account does not include PurpleTRAC Auto-Screening, it shows a lock icon and a greyed-out toggle. Hover the info icon for "Contact your account manager to enable PurpleTRAC Auto-Screening for compliance and sanctions risks."
-- Which accounts see the lock vs. the toggle depends on account permissions **[CONFIRM]**.
+- Accounts that do not have PurpleTRAC Auto-Screening enabled see the lock. Accounts that have it see the toggle.
 
 ## Troubleshooting
 | Problem | What to do |

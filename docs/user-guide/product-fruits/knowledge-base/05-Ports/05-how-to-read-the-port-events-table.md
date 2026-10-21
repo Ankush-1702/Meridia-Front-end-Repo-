@@ -16,7 +16,7 @@ Use the **Events** tab on a port page to see recent arrivals, departures and ber
    `[SCREENSHOT 2: Event Type dropdown]`
 6. Type in **Search...** to narrow the rows. It matches any value in the row, including dates as shown.
 7. Select a column heading to sort. Select it again to reverse the order.
-8. To show more columns, use the side panel of the table and tick the columns you want. **[CONFIRM: side panel label]**
+8. To show more columns, use the columns panel on the side of the table and tick the columns you want.
    `[SCREENSHOT 3: Optional columns]`
 9. Select a row to open that vessel's page.
 10. Select **Export** to request a file (see Good to know).
@@ -40,9 +40,9 @@ The table lists events, newest first. Text beside the search box says, for examp
 | **Flag** | Flag country. |
 
 - Optional columns: **Berth**, **Call Sign**, **Course**, **MMSI**, **Draught**, **Heading**, **Latitude**, **Longitude**, **Navigational Status (status)**, **Navigational Status (code)**, **Reported Destination**, **Reported ETA (UTC)** or **Reported ETA (System)**, and **Speed**. A dash (-) means no value. **Berth** is filled only for berth events.
-- Event types: **Area Arrival** and **Area Departure** relate to the port area, **Arrival** and **Departure** to the port, and **Berth Arrival** and **Berth Departure** to a berth. **[CONFIRM: exact definitions and how area differs from port]**
+- Event types: **Area Arrival** and **Area Departure** relate to the port area, **Arrival** and **Departure** to the port, and **Berth Arrival** and **Berth Departure** to a berth.
 - The table shows at most 500 recent events. Use **Export** for the full dataset. Export timestamps are in UTC.
-- In **Export** you choose **Event type** and **Date range** (**Today**, **Yesterday**, **Last 7 Days**, **Last 30 Days**, **Last 90 Days** or **Custom**), then select **Request export**. When ready it appears under **Notifications** then **Downloads**. A note says berth events are not included, so export those separately. **[CONFIRM: berth export route and file format]**
+- In **Export** you choose **Event type** and **Date range** (**Today**, **Yesterday**, **Last 7 Days**, **Last 30 Days**, **Last 90 Days** or **Custom**), then select **Request export**. When ready it appears under **Notifications** then **Downloads**. Berth events are exported the same way.
 - The page reloads every 5 minutes. **Updated ... ago** shows the age of the data.
 - Hover over a cell to see its full value. All times use your time-zone setting.
 - The **Inbound Vessels** view has its own filters. See "How to view inbound vessels".
@@ -51,7 +51,7 @@ The table lists events, newest first. Text beside the search box says, for examp
 | Problem | What to do |
 |---|---|
 | **No data available** | Tick more event types and clear **Search...**. |
-| Some events are missing | Berth and port events load separately. Select **Refresh** if one set is missing. **[CONFIRM: no error message is shown]** |
+| Some events are missing | Berth and port events load separately. Select **Refresh** if one set is missing. No error message is shown if one set fails to load. |
 | I need data older than 90 days | Use **Export** with a longer **Date range**. |
 | **Refresh** is greyed out | A refresh is already running. |
 | **Request export** is greyed out | Choose at least one event type and a valid date range. |

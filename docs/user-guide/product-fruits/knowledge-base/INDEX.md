@@ -1,6 +1,6 @@
 # Meridia Knowledge Base – articles by user journey
 
-Paste order for Product Fruits: go folder by folder, file by file (numbers show the order). Each file is Markdown; the matching paste-ready HTML is in `../articles/<file name without the NN- prefix>.html`. Screenshot placeholders look like `[SCREENSHOT n: …]`. `[CONFIRM]` tags mark open questions (see `../../CONFIRM-ITEMS.md`).
+Paste order for Product Fruits: go folder by folder, file by file (numbers show the order). Each file is Markdown; the matching paste-ready HTML is in `../articles/<file name without the NN- prefix>.html`. Screenshot placeholders look like `[SCREENSHOT n: …]`. Open product decisions are listed in `../../UPDATE-NOTES.md`.
 
 
 ## 01 · Sign in and stay secure

@@ -34,7 +34,7 @@ The replay runs through the period and, with **Pause at events** on, stops brief
 - The event card closes by itself after about 4.5 seconds and the replay resumes.
 - Keyboard: Space plays or pauses, Left and Right arrows step, Home and End jump to start or end, Esc resets.
 - Only event types ticked in the **Legend** pause the replay.
-- Dragging the slider pauses playback. **[CONFIRM]** whether the replay restarts from the dragged point.
+- Dragging the slider pauses playback. Select **Play** to continue from the point you dragged to.
 - Changing the date range resets the replay.
 
 ## Troubleshooting

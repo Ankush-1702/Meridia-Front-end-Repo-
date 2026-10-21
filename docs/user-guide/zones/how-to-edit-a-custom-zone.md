@@ -16,7 +16,7 @@ Change the name, description or shape of a custom zone you created.
 - You can upload a file to replace the shape, but its type must match ("Zone type must be Polygon" or "Zone type must be Circle"). The name is not overwritten.
 - **Save Changes** stays disabled until you change something and the form is valid. The validation rules match those in "How to create a custom zone".
 - **Cancel** leaves without saving.
-- Deleting a zone is not available in the screen **[CONFIRM]**.
+- Deleting a zone is not available.
 
 ## Troubleshooting
 | Problem | What to do |

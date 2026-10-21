@@ -3,7 +3,7 @@
 Define your own area of interest, as a polygon or a circle, and save it so you can analyse traffic in it.
 
 ## Before you begin
-- Your account needs access to custom zones **[CONFIRM: entitlement wording]**.
+- Your account needs access to custom zones. The relevant feature must be enabled for your account.
 - A polygon needs 3 to 100 points. A circle needs a centre and a radius of 100 m to 1,000 km.
 
 ## Steps
@@ -30,7 +30,8 @@ The new zone appears in the **Custom Zones** list and in your Library. Traffic a
 - **Create Zone** stays disabled until the form is valid and has at least 3 polygon points, or a radius above 0 for a circle.
 - Use the map style control (top right) and zoom control (bottom right) to find your location. The map shows coordinates as you move.
 - **Cancel** discards your work and returns you to the previous page.
-- Switching between **Polygon** and **Circle** remembers what you drew for each type, but only the most recent shape is kept **[CONFIRM]**.
+- You can have up to 100 custom zones. Once you reach that maximum, you can't create more.
+- Switching between **Polygon** and **Circle** remembers what you drew for each type, but only the most recent shape is kept.
 
 ## Troubleshooting
 | Problem | What to do |
@@ -47,4 +48,4 @@ The new zone appears in the **Custom Zones** list and in your Library. Traffic a
 | "Polygon area must be at least 31416 m² (found … m²)" | Make the area bigger. |
 | "Polygon area cannot exceed 10M km² (found … km²)" | Make the area smaller. |
 | "Please fix the validation errors before submitting" | Check the red "Validation Errors:" box in the form and correct each item. |
-| Other save error | Try again; if it persists contact support **[CONFIRM: server-side limits such as maximum number of zones]**. |
+| Other save error | Try again; if it persists contact support. If you already have 100 custom zones, you can't create more. |

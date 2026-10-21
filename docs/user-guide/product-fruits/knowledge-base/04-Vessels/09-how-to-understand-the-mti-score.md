@@ -22,10 +22,10 @@ A gauge shows the vessel's score between 0 and 5. Below it, a box titled **See w
 
 ## Good to know
 - Hover over the small help icon next to **MTI score** (while the section is collapsed) to see the tooltip: a 0-5 score of how transparent and compliant the vessel's operations are. The higher the score, the lower the risk. It is powered by the Maritime Transparency Index (MTI).
-- The gauge colours run red, orange, yellow, light green and green from low to high. The screen shows no named risk bands or thresholds. **[CONFIRM: any official score bands or what counts as a good or poor score]**
-- How the score is calculated, and how often it is refreshed, is not shown on screen. **[CONFIRM]**
+- The gauge colours run red, orange, yellow, light green and green from low to high. Red marks the very high risk band, orange the high risk band and yellow the medium risk band; the two green shades mark the lower-risk bands.
+- The vessel score assesses the stability, history and recorded condition of the vessel. It takes into account the vessel's age, recorded defects, detentions, and changes of ownership, flag, name and MMSI. The score is refreshed daily.
 - If a vessel has no score, you see an **Unscored** label and the text "No MTI score is available for this vessel yet." and "Scores appear once there is enough activity data to assess it."
-- The breakdown and ranking comparison are not shown in the app. The box says they are **Available on request** – select **More about MTI** to learn more and find contact details **[CONFIRM: the app shows a hover card with a More about MTI link, not a Contact us box]**.
+- The breakdown and ranking comparison are not shown in the app. The box says they are **Available on request** – select **More about MTI** to learn more and find contact details.
 
 ## Troubleshooting
 | Problem | What to do |

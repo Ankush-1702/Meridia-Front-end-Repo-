@@ -17,10 +17,10 @@ See every custom zone you have created, search them by name, and open or edit an
 8. To add another zone, click **New Custom Zone** (top right).
 
 ## Expected result
-The table lists your custom zones, 20 per page **[CONFIRM: pagination controls and whether the list is capped]**. While you search, the count reads for example `3 results for "gulf"`.
+The table lists your custom zones, 20 per page, with pagination to move between pages. Each user can have up to 100 custom zones. While you search, the count reads for example `3 results for "gulf"`.
 
 ## Good to know
-- The **Type** column shows the zone's shape (for example Polygon or Circle) **[CONFIRM: exact wording shown]**.
+- The **Type** column shows the zone's shape (**Polygon** or **Circle**).
 - **Updated** shows the date in a format such as 05 Oct 2026.
 - Columns cannot be sorted or filtered.
 - The **Actions** menu currently offers **Edit** only.

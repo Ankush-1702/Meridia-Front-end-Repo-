@@ -36,7 +36,7 @@ The map shows the track and events for your chosen dates.
 - **Nav** colours: **Underway**, **Moored / Anchored**, **Other**. **Speed** colours: **Stopped (< 0.1 kn)**, **Slow (0.1–5 kn)**, **Medium (5–15 kn)**, **Fast (≥ 15 kn)**. A dashed line is **AIS Gap**.
 - Event types: **Port Arrival**, **Port Departure**, **Zone Entry**, **Zone Exit**, **AIS Gap**, **STS Pairing**, **Discrepancy**, **PSC**. A type with no events in the period is greyed out ("events not available").
 - Custom dates must lie within the last two years and cannot span more than two years. **Apply** stays off until they are valid.
-- The toolbar shows the vessel's next port and **ETA** when available. **[CONFIRM]** data source.
+- The toolbar shows the vessel's next port and **ETA** when available. This comes from Meridia's vessel data feed (MVI) and updates as positions are received.
 - **Enter focus mode** (the expand icon, or Ctrl+/ or Cmd+/) hides panels so the map fills the page.
 - The **Event Timeline** panel has a **Search events...** box.
 - A **Loading** / **Loaded** note appears near the Legend while data loads. The **Draught** colour option is greyed out ("Coming soon").
@@ -45,6 +45,6 @@ The map shows the track and events for your chosen dates.
 
 | Problem | What to do |
 |---|---|
-| No track appears | Try a longer period. **[CONFIRM]** how vessels with no positions are shown. |
+| No track appears | Try a longer period. A vessel with no positions in the period shows no track and no events. |
 | The replay bar says "No data available for selected range" | Choose a different date range. |
 | Date message "Date range cannot exceed two years from current date." | Pick dates within two years. |

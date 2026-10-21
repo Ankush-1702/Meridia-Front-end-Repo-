@@ -29,6 +29,8 @@ You are signed in and see the Meridia home page.
 ## Troubleshooting
 | Problem | What to do |
 |---|---|
-| A red message appears at the top after clicking Sign in | The email or password was not accepted. Re-enter them carefully (check Caps Lock). The message text comes from the server **[CONFIRM exact wording]**. |
+| A red message appears at the top after clicking Sign in: "Invalid user credentials" | The email or password was not accepted. Re-enter them carefully (check Caps Lock). If you have forgotten your password, see **How to reset your password**. |
+| A red message appears: "User with the specified email address not found." | Check that you typed your email address correctly. If it is correct, contact your Meridia account administrator. |
+| A red message appears: "Inactive user state, Please ask account admin to activate your account" | Your account is not active. Ask your Meridia account administrator to activate it, then sign in again. |
 | Sign in button is greyed out | Fill in both Email and Password. |
 | Forgot your password | Click **Forgotten Password?** under the Sign in button and follow **How to reset your password**. |

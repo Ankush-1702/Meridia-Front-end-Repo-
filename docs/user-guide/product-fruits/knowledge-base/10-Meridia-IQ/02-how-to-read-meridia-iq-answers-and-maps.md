@@ -27,16 +27,15 @@ Understand the text, map, chart and MTI score displays that can appear in a Meri
     `[SCREENSHOT 5: MTI score table with sorting arrows and paging]`
 
 ## Good to know
-- Score cells are green, amber or red. Colour thresholds seen in the app: 3.5 and above is green, 2.0 and above is amber, below 2.0 is red. **[CONFIRM: meaning of the scores and colours]**
+- Score cells are green, amber or red. Colour thresholds seen in the app: 3.5 and above is green, 2.0 and above is amber, below 2.0 is red.
 - A dash (—) means no value. "MTI data unavailable for this vessel" means no score came back.
 - Markers hovered show "Click for more details". Not every marker opens a page; vessel markers do (when they have an IMO).
-- Meaning of each event type and marker colour. **[CONFIRM]**
 - There are no like/dislike, copy or share buttons on answers.
-- Accuracy of answers. **[CONFIRM]** The app itself advises: "We recommend verifying key information."
+- Answers are not guaranteed to be accurate. Verify key information: the app itself advises "We recommend verifying key information."
 
 ## Troubleshooting
 | Problem | What to do |
 |---|---|
-| Map is blank | Collapse and expand it again, or refresh the page. **[CONFIRM]** |
+| Map is blank | Collapse and expand it again, or refresh the page. |
 | A map marker does not open a page | Only vessel markers open pages. |
-| Answer shows "No response text" | Ask the question again. **[CONFIRM]** |
+| Answer shows "No response text" | This means Meridia IQ has no information on your query. Try rewording the question. |

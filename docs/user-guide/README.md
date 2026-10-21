@@ -1,6 +1,6 @@
 # Meridia User Guide – Knowledge Base Drafts (Product Fruits)
 
-Source of truth: `maritime-analytics-frontend-develop.zip` (v1.11.0). Steps are derived from the UI code (labels, validation rules, toasts), so wording matches the screen. Items marked **[CONFIRM]** depend on backend/email behaviour that cannot be verified from front-end code.
+Source of truth: `maritime-analytics-frontend-develop.zip` (v1.11.0) plus the team's answers to our open questions (see `UPDATE-NOTES.md`, data in `research/ui-testcases-observations.csv`). Steps use the exact labels, validation rules and messages seen in the UI.
 
 ## Article format (one article per task)
 Title → Before you begin → Numbered steps (one action each, UI labels in **bold**) → Expected result → Troubleshooting → `[SCREENSHOT n]` markers.
@@ -39,7 +39,7 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 - Missing Speed/Course/Heading/Draught can display as `0` instead of `-` in the Events table; a missing Detained value shows "No".
 - Events tab silently drops an event type if its fetch fails; fixed 500-row limit, no paging; fixed 90-day window (no date picker on the tab).
 - Per-event-type column definition files (Port/Zone/STS/AIS gap/Discrepancy/PSC) are unused – the Events tab uses one unified table.
-- Product decisions (confirmed): MTI, PurpleTRAC and Ask IQ are visible only to entitled accounts/users; locked boxes are described as leading to Contact us details – note the code actually shows a hover card with a **More about MTI / PurpleTRAC** link (external page), so the Vessels articles say that and carry a [CONFIRM]; users without the Meridia feature see no Meridia content; the Events tab's fixed 90-day window is not ideal but stays as-is for now.
+- Product decisions (confirmed): MTI, PurpleTRAC and Ask IQ are visible only to entitled accounts/users; locked boxes show an "Unlock / Available on request" card with a **More about …** link (opens a web page); the Events-tab 90-day window stays as is for now.
 - Toast says "bookmarks" while the UI says "Library".
 - MTI gauge never shows the score date although the API returns `updated_at`; "Unlock … / Available on request." upsell boxes also show for users who do have access.
 - Tooltip typo "avaialble" in the events panel; "Skip to start" replay button is very faint; several icon buttons lack `aria-label`.
@@ -59,7 +59,7 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 - Clicking a bell item, a pop-up, **View All** or **Refresh** clears the local list, pop-ups and bell count; **View All** also empties the bell's Downloads list.
 - Pressing Enter on a pop-up does not call "dismiss all", unlike a click.
 - PurpleTRAC Auto-Screening toggle is locked with "Contact your account manager" for accounts without the `ptrac-vessel-screening` / `auto-screening` group.
-- Show Notifications option labels are loaded from the backend (**[CONFIRM]** exact wording).
+- Show Notifications option labels are loaded from the backend (confirmed: All / last 7 days / last 24 hours).
 
 
 ## Front-end issues spotted while drafting Fleets
@@ -89,10 +89,11 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 - Chat list fetch is limited to 20 with no paging (older chats may be unreachable); titles are cut to 19 characters + "…".
 - Errors show raw server text ("Error: …"); an empty turn shows "No response text".
 - `MARA2_API_URL` falls back to `http://localhost:8000` if the env var is missing; a stale sidebar "New Chat" item pointing to `/analytics/chats` exists (hidden when the sidebar is expanded).
-- Access: group `meridia-iq` or `mara`; the article carries **[CONFIRM]** on how access is granted and on what IQ can answer.
+- Access: group `meridia-iq` or `mara`; access is requested through the account administrator.
 
 ## Where things are
 - `product-fruits/knowledge-base/` – **all articles as Markdown, grouped by user journey** (01 Getting started → 10 Meridia IQ) with an `INDEX.md`; paste in that order. Regenerate with `python3 tools/build_journeys.py`.
 - `product-fruits/articles/` – paste-ready HTML for each article; `product-fruits/tours-and-checklists.md` – in-app tours.
-- `CONFIRM-ITEMS.md` / `CONFIRM-ITEMS.csv` – **every open [CONFIRM] item in one flat list** (regenerate with `python3 tools/list_confirms.py`); `CONFIRM-LIST.md` – the same questions grouped by owner (PM / backend / front-end / support / QA).
+- `UPDATE-NOTES.md` – what the UI-research answers changed, rows still needing a product decision, features not yet covered, and issues for the product/dev team; `research/ui-testcases-observations.csv` – the answered question list (audit trail).
+- `offline/Meridia-User-Guide.html` – **one self-contained HTML file** (no internet needed): journey menu, full-text search, links between articles, light/dark, print. Open it from disk or upload it to any website/intranet. Rebuild after edits with `python3 tools/build_journeys.py && python3 tools/build_offline_html.py` (template: `tools/offline_template.html`).
 

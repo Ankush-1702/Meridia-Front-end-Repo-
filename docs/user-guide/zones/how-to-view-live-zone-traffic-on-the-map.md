@@ -21,7 +21,7 @@ Use the zone Overview tab to see which vessels are in the zone right now, where 
 9. Select **View Traffic Analytics** to open the **Traffic** tab.
 10. On the map, find the zone boundary and the vessels. The legend at top left shows **In Zone**.
    `[SCREENSHOT 3: Map with zone boundary, vessel markers and legend]`
-11. Select a vessel marker to see a popup with name, IMO, vessel type, flag, reported destination and ETA, timestamp and speed/course. The popup says "Click vessel for more details". **[CONFIRM]** which fields appear for each marker.
+11. Select a vessel marker to see a popup with name, IMO, vessel type, flag, reported destination and ETA, timestamp and speed/course. The popup says "Click vessel for more details".
 12. Select the map style button (**Toggle Map Styles**) at top right. In **Map Style**, choose **Simple**, **Satellite** or **C-MAP**, and switch **Grid / Graticules** on or off.
    `[SCREENSHOT 4: Map Style panel]`
 13. Scroll down to the charts: **Entries and Exits** (**Last 24 Hours**) and **Entries by Vessel Type** (**Last 24 Hours**).
@@ -37,8 +37,8 @@ You see the current vessels in the zone on the map and in the list, the last 30 
 - Vessel positions are shown on the map; the count in the card may be higher than the number of markers. If vessels exist but none can be mapped, the list says "No mappable vessels currently in zone".
 - If there are none, the list says "No vessels currently in zone".
 - The **Vessels In Zone** card shows only the count until you select it; the list appears when it is expanded.
-- The map shows custom zones from their saved shape, and other zones from the zone boundary. **[CONFIRM]** how boundaries are sourced.
-- **[CONFIRM]** What counts as "in the zone" and how often positions update, since this depends on backend data.
+- The map shows custom zones from their saved shape, and other zones from the zone boundary.
+- "In the zone" means vessels that are currently in the zone. Their positions are updated with live data.
 - A custom-zone banner may appear at the top of the tab for newly created zones.
 
 ## Troubleshooting
@@ -47,4 +47,4 @@ You see the current vessels in the zone on the map and in the list, the last 30 
 |---|---|
 | "Error loading vessel data" appears | Select **Refresh**. If it persists, reload the page. |
 | The charts show "No data available" | Select **Refresh**; the message suggests adjusting the date range or filters or refreshing. |
-| The map is blank | **[CONFIRM]** A message appears if the map service is not configured; contact your account manager. |
+| The map is blank | Contact your account manager. |

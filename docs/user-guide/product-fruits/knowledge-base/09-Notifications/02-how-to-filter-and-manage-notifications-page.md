@@ -25,12 +25,12 @@ Narrow the Notifications page to ports or zones, refresh it, export it, and choo
 The table reloads and shows only the notifications that match your choices.
 
 ## Good to know
-- The options under **Show Notifications** are loaded for your account; the labels include **All** **[CONFIRM exact list, expected: All, last 7 days, last 24 hours]**.
+- The options are **All**, last 7 days and last 24 hours.
 - The table has no search box, no sorting, and no mark-as-read or delete options. Notifications are not marked read or unread.
 - **Refresh** also clears the pop-ups and the bell panel list.
 - If many notifications arrive quickly, a banner shows "N new notifications received" with a **show** button. Click **show** to reload the list.
-- The table loads up to 500 notifications at a time **[CONFIRM paging behaviour beyond this]**.
-- Risk values come from PurpleTRAC Auto-Screening **[CONFIRM]**. Tooltips say auto-screening is currently only available for Port Area Arrival and Zone Entry events, and not for tug and push-boat vessels.
+- The table loads up to 500 notifications at a time. If there are more, click **Next** to go to the next page.
+- Risk values come from PurpleTRAC Auto-Screening. Tooltips say auto-screening is currently only available for Port Area Arrival and Zone Entry events, and not for tug and push-boat vessels.
 
 ## Troubleshooting
 | Problem | What to do |
