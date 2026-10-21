@@ -28,7 +28,6 @@ A new chat opens with one of these questions already sent:
 - The question is sent straight away. You cannot edit it first. Ask a follow-up in the same chat to refine it.
 - The question uses up part of your daily token limit.
 - Ask IQ is not available on the fleet page itself or the fleet event panel.
-- Quality and coverage of these summaries. **[CONFIRM]**
 
 ## Troubleshooting
 | Problem | What to do |

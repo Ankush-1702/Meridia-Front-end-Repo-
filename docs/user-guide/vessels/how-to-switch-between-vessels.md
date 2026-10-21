@@ -29,7 +29,7 @@ The page opens the selected vessel, and the map and replay start fresh for it.
 - Each entry shows a flag, the vessel name, the vessel type and its IMO number.
 - **Recent** keeps your last 6 vessels, most recent first. The list is stored in your browser, so it is not shared across browsers or devices.
 - The vessel you are viewing is highlighted in **Recent** and **Library**, and is left out of search results.
-- The **Library** tab shows up to 20 vessels you have added to your Library. **[CONFIRM]** whether vessels beyond 20 are expected to be listed.
+- The **Library** tab lists the vessels you have added to your Library.
 - Press **Esc** or click outside the box to close it without switching.
 
 ## Troubleshooting

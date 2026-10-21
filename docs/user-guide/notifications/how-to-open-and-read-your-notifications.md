@@ -27,7 +27,7 @@ The **Notifications** page opens at `/analytics/notifications` and lists your no
 ## Good to know
 - If there is nothing new, the panel shows **No notifications**.
 - The tag on each item shows the vessel's risk result. It shows **NA** for exits, port arrivals, port departures, port area departures, and for tug and push-boat vessels, and **Unscored** if no result is available yet.
-- Removing an item with the **x** only removes it from the panel list. It does not delete it from the Notifications page **[CONFIRM]**.
+- Removing an item with the **x** only removes it from the panel list. It does not delete it from the Notifications page.
 - The panel does not have read or unread states, or a mark-as-read option.
 - If pop-ups are on, new notifications also appear in the bottom-left corner (see "How to turn notification pop-ups on or off").
 - Click a pop-up to open the **Notifications** page. Click **x** on a pop-up to close it. When more than one pop-up shows, **Dismiss All** closes them all.

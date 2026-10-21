@@ -4,7 +4,7 @@ Use the **Events Timeline** list and the detailed Gantt chart on a vessel's **Ov
 
 ## Before you begin
 - Open a vessel page (`/analytics/vessel/:id`) and stay on the **Overview** tab. Both views sit beside and below the map.
-- Both views show the same events and use the same date range. Events come from port calls, zone events, AIS gaps, STS pairings, positional discrepancies and Port State Control inspections. **[CONFIRM: exact event sources and how often they refresh]**
+- Both views show the same events and use the same date range. Events come from port calls, zone events, AIS gaps, STS pairings, positional discrepancies and Port State Control inspections. Events refresh according to each source service's own schedule.
 - Times in both views are shown in UTC.
 
 ## Steps
@@ -35,12 +35,12 @@ Use the **Events Timeline** list and the detailed Gantt chart on a vessel's **Ov
 ## Good to know
 - Colours (same in both views and the map **Legend**): Port Arrival and Port Departure are teal, Zone Entry and Zone Exit are dark blue, STS Pairing is purple, Discrepancy is yellow, PSC is pink and AIS Gap is red.
 - A long bar is a period of time. A thin vertical mark is a single moment, or an event shorter than one minute. Wide bars show their duration (for example 6.5h or 2.0d) and, if wide enough, the place name.
-- Arrival and departure events at the same place are joined into one bar, and so are zone entry and exit. An arrival with no matching departure appears as a thin mark. **[CONFIRM: how an arrival still in progress is intended to look]**
+- Arrival and departure events at the same place are joined into one bar, and so are zone entry and exit. An arrival with no matching departure appears as a thin mark.
 - With **Group by Type**, rows are organised as PORT AREA, PORT and BERTH, then ZONE EVENTS, AIS GAP, STS PAIRING, DISCREPANCY and PSC. With **Group by Location**, each place gets its own heading with Port Area, Port, Berth or Zone rows underneath.
 - Which events appear is controlled by the checkboxes in the map **Legend** (**Events**, with **Show / Hide All**). Hidden types disappear from the list and the chart. An event type with no events in the range is greyed out.
 - A dashed amber line labelled **ETA** shows the vessel's reported arrival time and destination, when it falls inside the visible range.
 - When you play a replay, an orange line marks the replay position. Events that have not happened yet are faded, and the list shows **Replay active. Events will appear here as they occur.** until the first one occurs.
-- There are no zoom buttons. The chart spaces days automatically for the range you choose (a short range is stretched out, a long range is compressed). Scroll sideways and up or down to move around. **[CONFIRM: whether zoom controls are planned]**
+- There are no zoom buttons. The chart spaces days automatically for the range you choose (a short range is stretched out, a long range is compressed). Scroll sideways and up or down to move around.
 - Long place names are shortened in the left-hand column. Hover over the name to see it in full.
 
 ## Troubleshooting
@@ -52,4 +52,4 @@ Use the **Events Timeline** list and the detailed Gantt chart on a vessel's **Ov
 | I cannot select a **Custom range** | The range cannot start more than two years ago or end in the future, and the end must not be before the start. The menu shows **Date range cannot exceed two years from current date.** |
 | The **Apply** button is greyed out | Both a start and an end date are needed and must be valid. |
 | An event type is greyed out in the **Legend** | There are no events of that type in the selected range. |
-| The Gantt chart button is greyed or does nothing | The replay bar is disabled when the vessel has no events in the range. **[CONFIRM]** |
+| The Gantt chart button is greyed or does nothing | The replay bar is disabled when the vessel has no events in the range. |

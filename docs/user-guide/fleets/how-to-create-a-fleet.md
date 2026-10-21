@@ -15,7 +15,7 @@ Create a named group of vessels so you can monitor them together.
 2. On the **New Fleet** page, type a name in **Name** (up to 100 characters).
 3. Optional: type a note in **Description (optional)** (up to 200 characters).
    `[SCREENSHOT 2: Details card with Name and Description]`
-4. In **Add Vessels**, stay on the **Search** tab and type a vessel name or IMO number in **Search vessel name or IMO...**. **[CONFIRM]** Search starts after you type at least 3 characters.
+4. In **Add Vessels**, stay on the **Search** tab and type a vessel name or IMO number in **Search vessel name or IMO...**. Search starts after you type at least 3 characters.
 5. Click a vessel in the results to add it. Vessels already added show a tick and can't be clicked again.
    `[SCREENSHOT 3: Search results with an added vessel ticked]`
 6. To add many vessels at once, click the **Bulk Import** tab.
@@ -30,7 +30,7 @@ A "Fleet "name" created successfully" message appears and the new fleet opens.
 
 ## Good to know
 - **Upload a CSV:** click **Download template** for the format. The file must be a .csv with one IMO per row. Drag and drop works too; click the X next to the file name to remove it. You can use paste or upload, not both at once.
-- **IMOs that can't be added:** a yellow panel shows "N IMOs couldn't be added" with counts of "not found" and "invalid format". Click it to see each IMO and the reason, and use the X or **Dismiss all** to clear them. The reasons come from the system. **[CONFIRM]**
+- **IMOs that can't be added:** a yellow panel shows "N IMOs couldn't be added" with counts of "not found" and "invalid format". Click it to see each IMO and the reason, and use the X or **Dismiss all** to clear them. The reasons come from the system.
 - **Remove vessels:** click the X beside a vessel in the **Vessels** panel, or open the panel's vessel actions menu and click **Clear fleet** to remove all of them.
 - **Near the limit:** the count turns yellow at 90% of the limit and red above it, with a message "Remove N vessel(s) to save".
 - **Leaving without saving:** click **Cancel**. If you've entered anything, **Discard changes?** asks you to confirm with **Discard changes**, or click **Keep editing**.

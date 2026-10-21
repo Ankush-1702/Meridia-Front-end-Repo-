@@ -41,15 +41,15 @@ You see current vessel counts, a map of vessels in and heading to the port, and 
 - "Commercial vessels only" appears beside the charts. Its tooltip says all data uses commercial vessel data only and excludes passenger, fishing and tug vessels.
 - Empty states: "No vessels currently in port", "No mappable vessels currently in port" and "No inbound vessels".
 - The **Inbound** time frame you pick is remembered on your device.
-- **[CONFIRM]** how "in port" and "inbound" are defined, and the data sources and freshness of ATA and ETA.
-- **[CONFIRM]** how the Performance figures and the arrival and departure counts are calculated.
-- **[CONFIRM]** map marker interactions (hover or click) as they depend on shared map code.
+- Vessels in port and inbound vessels come from separate data feeds. The data, including **ATA** and **ETA**, updates as events are received.
+- The Performance figures are based on events received in the previous 30 days. The maximum is the highest count and the average is the mean.
+- On the map, hover over a vessel marker to see basic information, or select it to open more details.
 
 ## Troubleshooting
 
 | Problem | What to do |
 |---|---|
 | Charts or Performance show "No data available" | Select **Refresh**, or reload the page. The message suggests adjusting filters or refreshing. |
-| The map is blank or shows a missing-token notice | Contact support. **[CONFIRM]** wording and cause. |
-| The vessel count differs from the markers on the map | The "No mappable vessels" message means some vessels have no usable position. **[CONFIRM]** |
+| The map is blank or shows a missing-token notice | Check that your account has the zones and ports permission. If it still does not load, contact support. |
+| The vessel count differs from the markers on the map | The "No mappable vessels" message means some vessels have no usable position. |
 | Data looks old | Check the "Updated ... ago" time, then select **Refresh**. |

@@ -6,7 +6,7 @@ If two-step verification is turned on for your account, you must enter a one-tim
 Complete steps 1–5 of **How to log in**. The MFA screen appears automatically after **Sign in**.
 
 ## Steps
-1. On the **Verify your identity** screen, check your email for a 6-digit code. **[CONFIRM: delivery is email per the screen text "Enter the code sent to your email"]**
+1. On the **Verify your identity** screen, check your email for a 6-digit code.
    `[SCREENSHOT 1: Verify your identity screen]`
 2. Type the code in **Verification Code** (digits only, 6 characters).
 3. Click **Sign in**.

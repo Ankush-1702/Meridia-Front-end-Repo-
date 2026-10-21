@@ -4,8 +4,8 @@ Review a port's reference details (harbour, dimensions, pilotage, services and f
 
 ## Before you begin
 
-- **[CONFIRM]** The **Details** tab is switched off in the current front-end build: it is not in the tab bar on the port page. Publish this article only when the tab is enabled.
-- When enabled, the data comes from World Port Index (WPI) records. **[CONFIRM]** the data source, edition and update date.
+- This feature is not currently available. The **Details** tab is not shown on the port page. Publish this article only when the tab is enabled.
+- When enabled, the data comes from World Port Index (WPI) records.
 
 ## Steps
 
@@ -51,10 +51,7 @@ You see the port's reference data grouped into category cards.
 - Yes/No fields show **Yes**, **No** or **Unknown**. A missing value shows "Not Available".
 - Harbour codes are shown in words: size (**Large**, **Medium**, **Small**, **Very Small**), type (for example **Coastal (Natural)**, **River (Basin)**, **Open Roadstead**), use (**Cargo**, **Fishing**, **Military**, **Ferry**, **Unknown**) and shelter (**Excellent** to **None**).
 - Repairs show **Major**, **Moderate**, **Limited**, **Emergency Only** or **None**. Dry Dock and Railway show **Small**, **Medium** or **Large**. Underkeel Clearance Management System shows **Static**, **Dynamic**, **None** or **Unknown**.
-- Only categories and fields with data from the port record are listed. **[CONFIRM]** whether empty categories are hidden.
-- **[CONFIRM]** the units shown for dimensions, and the meaning of Facilities fields (only labels are in the code).
-- **[CONFIRM]** the Export file layout. It writes one header row and one value row of the WPI fields.
-- **[CONFIRM]** the label "Harbor" (US spelling) is as shown in the app.
+- Only categories and fields with data from the port record are listed.
 
 ## Troubleshooting
 

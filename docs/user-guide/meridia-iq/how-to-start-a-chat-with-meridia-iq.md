@@ -3,7 +3,7 @@
 Open Meridia IQ, type a question and read the answer in a chat.
 
 ## Before you begin
-- Meridia IQ appears only for users whose account has access to it. If you do not see **Meridia IQ** in the left sidebar, ask your administrator. **[CONFIRM: wording for how access is granted]**
+- Meridia IQ appears only for users whose account has access to it. If you do not see **Meridia IQ** in the left sidebar, contact your account administrator for access.
 - Expand the left sidebar if it is minimised (use the **Expand** button at the top).
 
 ## Steps
@@ -29,8 +29,8 @@ Your question appears on the right and the answer appears below it. The chat is 
 - While an answer is loading, the message box is locked. There is no stop or regenerate button.
 - The small circle next to the send button shows how much of your daily token limit you have used. Hover over it to see "% used" and the reset time (UTC).
 - A note under the box says: "Meridia IQ offers insights based on available maritime data. We recommend verifying key information."
-- What Meridia IQ can and cannot answer, and which data it uses. **[CONFIRM]**
-- The example questions mention vessels by IMO number, ports and zones such as the Strait of Hormuz. **[CONFIRM: whether these examples are guaranteed to return results]**
+- Meridia IQ answers questions based on the database it is connected to.
+- The example questions mention vessels by IMO number, ports and zones such as the Strait of Hormuz. The examples are not guaranteed to return correct results.
 
 ## Troubleshooting
 | Problem | What to do |
@@ -40,4 +40,4 @@ Your question appears on the right and the answer appears below it. The chat is 
 | "Failed to send message. Please try again." | Send the message again. |
 | "Daily token limit reached. Resets at ..." (box shows "Token limit reached") | You cannot send until the reset time shown. |
 | "Your daily token quota has been reached. It will reset automatically at ... Please contact your administrator if you require immediate access." | Wait for the reset, or contact your administrator. |
-| A message starting "Error:" appears instead of an answer | Try asking again. **[CONFIRM: recommended action]** |
+| A message starting "Error:" appears instead of an answer | Try asking again. |

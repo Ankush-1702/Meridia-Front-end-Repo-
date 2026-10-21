@@ -35,8 +35,8 @@ The map shows one marker for each filtered vessel with a known position. Selecti
 ## Good to know
 
 - Panel rows: **Type**, **Class**, **MMSI**, **Callsign**, **Flag**, **Build year**, **Age**, **DWT**, **Registry status**, **PurpleTRAC screening**, **MTI score**, then **Latest position** (a small map) with **Nav Status**, **Coordinates**, **Speed**, **Course**, **Destination**, **ETA** (UTC), **Last reported** and **Source**. A dash (-) means no value.
-- **PurpleTRAC screening** and **MTI score** need the matching access. Without it you see a lock with **Unlock**. Hover to read what it offers. **[CONFIRM]** the "Contact us" step that opens on click: in the code this is an "Available on request." card with a **More about PurpleTRAC** or **More about MTI** link.
-- Marker colours come from the vessel type. Types without a set colour use a default. **[CONFIRM]** the full colour list.
+- **PurpleTRAC screening** and **MTI score** need the matching access. Without it you see a lock with **Unlock**. Hover to see an "Available on request." card, and select **More about PurpleTRAC** or **More about MTI** to open a web page with more information.
+- Marker colours come from the vessel type. Types without a set colour use a default.
 - If the Ask IQ feature is enabled for you, an **Ask IQ** button appears in the vessel panel. Users without it see nothing.
 - The legend currently offers a **Type** view only. The legend by flag is switched off in the code.
 - Event markers do not appear on this map. They appear on the small map inside a fleet event's side panel. See "How to view fleet events".
@@ -47,7 +47,7 @@ The map shows one marker for each filtered vessel with a known position. Selecti
 
 | Problem | What to do |
 |---|---|
-| The map is blank or shows a notice about a missing token | The map service is not configured. Contact support. **[CONFIRM]** |
+| The map is blank or shows a notice about a missing token | The map service is not configured. Contact support. |
 | A vessel is missing from the map | It may have no valid position, or its type is unticked in the **Legend**. Check **List view**. |
 | No markers after filtering | Select **Reset Filters**. |
 | The panel does not open | Click the marker itself, not the hover card. |

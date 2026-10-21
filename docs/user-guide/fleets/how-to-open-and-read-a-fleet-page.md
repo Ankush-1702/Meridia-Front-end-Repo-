@@ -37,17 +37,17 @@ You see the fleet's name and vessel count, and can move between the Overview, Co
 - Filters on **Overview** and **Composition** are separate. Changing one does not change the other.
 - The **Overview** data reloads by itself every 5 minutes. **Updated ... ago** shows its age. The **Events** tab has its own **Refresh**.
 - The fleet page has no date range picker.
-- The table view in **Overview** shows the columns **Vessel**, **IMO**, **MMSI**, **Type**, **Class**, **Flag**, **Nav Status**, **MTI Score** (only if you have it), **Next Port**, **Last Reported**, **Speed** and **Course**. You can sort by any column and search with **Search vessels...**. **[CONFIRM]** how each value is sourced.
-- Above the table, "Showing X of Y vessels" tells you how many vessels match, plus the number of filters applied. Its menu offers **Export Data (CSV)**. **[CONFIRM]** exact CSV contents and file name (see report note).
+- The table view in **Overview** shows the columns **Vessel**, **IMO**, **MMSI**, **Type**, **Class**, **Flag**, **Nav Status**, **MTI Score** (only if you have it), **Next Port**, **Last Reported**, **Speed** and **Course**. You can sort by any column and search with **Search vessels...**. The values come from Meridia's vessel data.
+- Above the table, "Showing X of Y vessels" tells you how many vessels match, plus the number of filters applied. Its menu offers **Export Data (CSV)**. The CSV matches the data shown on screen and is named after the fleet (`<fleet name>.csv`).
 - The three-dot menu in the header holds the actions to change or delete the fleet. These are covered in separate articles.
-- Locked scores in the vessel panel (see "How to view your fleet on the map") show a lock with an **Unlock** prompt. **[CONFIRM]** the "Contact us" details shown on click, because the code shows an "Available on request." hover card with a **More about ...** link.
+- Locked scores in the vessel panel (see "How to view your fleet on the map") show a lock with an **Unlock** prompt. Hover over it to see an "Available on request." card, and select the **More about ...** link to open a web page with more information.
 
 ## Troubleshooting
 
 | Problem | What to do |
 |---|---|
-| No **Fleets** tab in Library | Fleet management is not enabled for you. Ask your account manager. **[CONFIRM]** |
+| No **Fleets** tab in Library | Fleet management is not enabled for you. Ask your account manager to enable the fleet feature for your account. |
 | A loading placeholder stays on screen | Wait a moment, then reload the page. |
-| An error page appears instead of the fleet | Check you opened a fleet you can access, then try again. **[CONFIRM]** exact error text. |
+| An error page appears instead of the fleet | Check you opened a fleet you can access, then try again. The page may show "The fleet_id parameter is missing or not a valid UUID format." or "An error occurred while loading this page. Please try refreshing the page, or go back to the Library." |
 | The table says **No vessels match these filters.** | Select **Reset filters** or adjust the filters. |
 | The table says **No data available** | The fleet has no vessels to show. |
