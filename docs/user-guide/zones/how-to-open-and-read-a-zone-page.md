@@ -12,7 +12,7 @@ Open a zone in Meridia to see the vessels currently in it, its traffic analytics
 1. Open **Library** from the main navigation.
 2. Select the **Zones** tab.
    `[SCREENSHOT 1: Library page with the Zones tab selected]`
-3. Select the zone you want. **[CONFIRM]** how a zone is located on this tab (search box, list rows) because that screen is outside this page's code. You can also use **Search** and pick a zone from the results.
+3. Select the zone you want. You can also use **Search** in the main navigation, or the **Add** button (**Add** > **Zone**), and pick a zone from the results.
 4. The zone page opens (its address ends with the zone's ID).
    `[SCREENSHOT 2: Zone page showing the header, tabs and Overview]`
 5. Check the header. It shows the zone name and a subtitle made of the zone type, sub type and country, separated by commas. A country flag is shown when one is available; otherwise a zone icon is shown.
@@ -40,15 +40,15 @@ You see the zone's name, type and country, and can move between its Overview, Tr
 - Switch on **Email Notifications** to choose **Timing** (**Immediately** or **Scheduled**). For **Scheduled**, set **Emails per day** (**1**, **2**, **3**, **4**, **Hourly**) and **Send at**. A note warns that **Immediately** on large zones and ports may trigger a large amount of emails.
 - **Ask IQ** appears next to the tabs only if your account is entitled to it. Selecting it opens Ask IQ with a prompt about this zone.
 - The header has no date range picker for zones. Time ranges are set on the **Traffic** tab.
-- Newly created custom zones show a banner: "Traffic analytics will be available 24 hours after zone creation. Data is processed daily." It appears on **Overview** and **Traffic** and disappears after that period. **[CONFIRM]** the processing schedule and what happens if the zone was created in a test environment.
+- Newly created custom zones show a banner: "Traffic analytics will be available 24 hours after zone creation. Data is processed daily." Traffic data is generated on a previous-day basis, so it is available 24 hours after the zone is created. The banner appears on **Overview** and **Traffic** and disappears after that period.
 - A **Details** tab (name, type, sub type, country, UNLOCODE, WPI number, sub division) exists in the code but is not shown in the tab bar, so it is not available.
-- **[CONFIRM]** There is no zone switcher on the page. To change zone, use **Search** or **Library**.
+- There is no zone switcher on the page. To change zone, use **Search** or **Library**.
 
 ## Troubleshooting
 
 | Problem | What to do |
 |---|---|
 | A loading placeholder stays on screen | Wait a moment, then reload the page. |
-| An error page appears instead of the zone | Check the zone ID in the address, then try again. **[CONFIRM]** exact error text. |
+| An error page appears instead of the zone | Check the zone ID in the address, then try again. The page may show "No zone record exist with supplied id" or "An error occurred while loading this page. Please try refreshing the page, or go back to the Library." |
 | You cannot find the zone | Use **Search**, or check the **Zones** tab in **Library**. |
 | The traffic panels are empty on a new custom zone | Wait for the banner period to pass and refresh. |

@@ -21,7 +21,7 @@ Use the Events tab to see when individual vessels entered or left a zone, search
 8. Select a row to open the vessel's page.
 9. To export, select **Export**. In the window, choose event types, then a date range, and select **Request export**.
    `[SCREENSHOT 4: Export window]`
-10. Wait for "Export queued", then select **Done**. **[CONFIRM]** where the finished file is delivered or downloaded.
+10. Wait for "Export queued", then select **Done**. When the file is ready, it appears in the **Notifications** menu, on the **Downloads** tab.
 
 ## Expected result
 
@@ -44,7 +44,7 @@ The table lists the most recent events, newest first, for the event types you ch
 | **Type** | Vessel type |
 | **Flag** | Flag state |
 
-- Columns hidden by default (shown through the table's column controls; **[CONFIRM]** how to reveal them):
+- Columns hidden by default (add them from the columns menu on the right of the table):
 
 | Column | Meaning |
 |---|---|
@@ -55,7 +55,7 @@ The table lists the most recent events, newest first, for the event types you ch
 | **Navigational Status (status)**, **Navigational Status (code)** | Reported navigational status |
 | **Reported Destination**, **Reported ETA** | Voyage details reported by the vessel |
 
-- Empty values show "-". **[CONFIRM]** units for course, heading, speed and draught, and how an event is detected.
+- Empty values show "-". Course and heading are in degrees, speed is in knots and draught is in metres.
 - Selecting a row opens the vessel page using its IMO number.
 
 ## Troubleshooting
@@ -63,6 +63,6 @@ The table lists the most recent events, newest first, for the event types you ch
 | Problem | What to do |
 |---|---|
 | "No data available" | Check **Event Type** has a selection, clear **Search...**, then select **Refresh**. |
-| The table is empty after an error | Select **Refresh**. **[CONFIRM]** whether an error message is shown. |
+| The table is empty after an error | Select **Refresh**. |
 | **Request export** is unavailable | Select at least one event type and a valid date range. |
 | An older event is missing | The table shows only the latest 500 from 90 days. Use **Export**. |
