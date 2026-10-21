@@ -20,7 +20,7 @@ Find an item in Meridia and save it so it appears in your Library.
 ## Good to know
 - Clicking the result row itself (not the button) opens that vessel, port or zone page instead.
 - Results load as you scroll down the list.
-- To remove an item, open the same search, find it, and click **Added to Library** again. **[CONFIRM: other ways to remove]**
+- To remove an item, open that vessel, port or zone's own page, open the three-dot menu and choose **Remove from Library**. This is the only way to remove an item.
 
 ## Troubleshooting
 | Problem | What to do |

@@ -12,7 +12,7 @@ Use the Traffic tab to analyse how many vessels enter and exit a zone over a per
 1. Select the **Traffic** tab.
    `[SCREENSHOT 1: Traffic tab with filters and charts]`
 2. Choose the time range with the calendar button. It shows **Previous 30 Days** at first. Options: **Previous 7 Days**, **Previous 30 Days**, **Previous 90 Days**, **Previous 12 Months**, **Custom**.
-3. For **Custom**, enter a **Start date** and **End date** and apply. **[CONFIRM]** the exact apply button label, which is outside this page's code. The date picker accepts dates within the last two years.
+3. For **Custom**, enter a **Start date** and **End date** and apply. Each date must be a valid date within the last two years, and the start date can't be after the end date.
    `[SCREENSHOT 2: Time range options with Custom dates]`
 4. Narrow the data with **Vessel Flag**, **Vessel Type** and **Vessel Class**. Each has **Select All**; **Vessel Flag** also has a **Search Flags** box.
 5. Note that **Vessel Class** is greyed out until at least one vessel type is selected.
@@ -47,11 +47,11 @@ The charts and table update to your time range and filters, and exports download
 | **Flag** | Flag state |
 | **Type** | Vessel type |
 | **Class** | Vessel class, or "-" if none |
-| **Visits** | Number of visits **[CONFIRM]** how a visit is counted |
+| **Visits** | Number of visits. A visit is counted as one entry and exit pair |
 
-- **[CONFIRM]** How entries, exits and unique entries per day are calculated, whether the end date is included, and the data cut-off (the presets end yesterday).
-- **[CONFIRM]** What the **Vessel Class** values mean for each type.
-- An **Export** button exists in the code but is switched off, so only the per-chart menus export.
+- Entries and exits are based on the entry and exit events recorded for the zone. Unique entries are counted by IMO number, so a vessel is counted once however many times it enters.
+- **Vessel Class** is the class a vessel belongs to, based on its vessel type.
+- Export is available from the menu on each chart or metric.
 - Newly created custom zones show a banner about analytics being available after 24 hours.
 
 ## Troubleshooting

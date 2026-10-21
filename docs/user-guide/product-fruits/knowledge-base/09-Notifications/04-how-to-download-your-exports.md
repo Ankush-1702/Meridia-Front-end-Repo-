@@ -3,7 +3,7 @@
 Find exports you requested and download them as CSV files.
 
 ## Before you begin
-- Request an export from a port, zone, vessel or fleet page first **[CONFIRM where export is requested]**.
+- Request an export first. You can request an export from any entity page: a vessel, port, zone or fleet.
 - Exports are available to download for 24 hours after they're generated.
 
 ## Steps
@@ -25,7 +25,7 @@ The CSV file downloads to your computer.
 ## Good to know
 - **Expires** counts down, for example "Expires in 3h".
 - Failed exports show **Retry**. Expired exports show **Request again**.
-- The panel only lists exports requested recently in this browser. The page lists recent exports **[CONFIRM how many]**.
+- The panel only lists exports requested recently in this browser. There is no limit on how many exports are stored. The page shows 100 downloads per page.
 - The panel shows **No downloads available** if there are none.
 - If an export is still running, a message says "Export is still processing...".
 

@@ -16,7 +16,7 @@ Use the **Events** tab on a vessel page to see a table of that vessel's recent p
 5. To tick or untick everything at once, use the select-all option at the top of the list.
 6. Type in **Search...** to narrow the rows. It matches any value in the row, including the dates as you see them.
 7. Select a column heading to sort by that column. Select it again to reverse the order.
-8. To see more columns, open the **Columns** panel on the side of the table and tick the columns you want. **[CONFIRM: where the Columns tab appears on screen]**
+8. To see more columns, open the **Columns** panel on the side of the table and tick the columns you want.
    `[SCREENSHOT 3: Columns panel with optional columns]`
 9. To go back to the standard columns, select **Reset columns**. It is greyed out until you change the columns.
 10. Select a row to open the related port or zone page, if the row has one.
@@ -33,16 +33,16 @@ The table lists matching events with the newest first. The text beside the searc
 - The standard columns are **TimeStamp**, **Event**, **Location**, **Country**, **UN/LOCODE**, **Zone Type**, **Speed**, **Course** and **Duration (hours)**. The **TimeStamp** header shows **(UTC)** or **(System)**, following your time-zone setting. See "How to read the events tables" for what each column means.
 - Not every column applies to every event type. A dash (-) means no value. A tooltip beside the table says the same.
 - Hover over a cell to see its full value.
-- Clicking a **Zone Entry** or **Zone Exit** row opens that zone's page. Clicking a port event row opens that port's page. Other event types do nothing when clicked. **[CONFIRM: that Area Arrival and Area Departure rows open the port page]**
+- Clicking a **Zone Entry** or **Zone Exit** row opens that zone's page. Clicking a port event row (including **Area Arrival** and **Area Departure**) opens that port's page. Other event types do nothing when clicked.
 - The data refreshes by itself every 5 minutes. **Updated ... ago** shows the age of the data.
-- In **Export**, you choose **Event type** and **Date range** (**Today**, **Yesterday**, **Last 7 Days**, **Last 30 Days**, **Last 90 Days** or a custom range) and select **Request export**. When the file is ready it appears in Notifications or Downloads. **[CONFIRM: file format and whether the export covers other columns]**
+- In **Export**, you choose **Event type** and **Date range** (**Today**, **Yesterday**, **Last 7 Days**, **Last 30 Days**, **Last 90 Days** or a custom range) and select **Request export**. When the file is ready it appears in Notifications or Downloads. The file is a CSV and it also covers columns beyond those shown by default.
 - Berth events appear on the timeline and map but are not in this table's **Event Type** list.
 
 ## Troubleshooting
 | Problem | What to do |
 |---|---|
 | The table says **No data available** | Tick more event types, clear **Search...**, or check again later. |
-| A type seems missing | Each type is fetched separately. If one request fails, only that type is left out. Select **Refresh**. **[CONFIRM: no error message is shown for a failed type]** |
+| A type seems missing | Each type is fetched separately. If one request fails, only that type is left out. Select **Refresh**. |
 | I need data older than 90 days | Use **Export** and pick a longer **Date range**. |
 | **Refresh** is greyed out | A refresh is already running. |
 | Clicking a row does nothing | That event has no linked port or zone page. |

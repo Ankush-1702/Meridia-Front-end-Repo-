@@ -34,7 +34,7 @@ root="product-fruits/knowledge-base"
 if os.path.isdir(root): shutil.rmtree(root)
 os.makedirs(root)
 mapped=set(); idx=["# Meridia Knowledge Base – articles by user journey\n",
- "Paste order for Product Fruits: go folder by folder, file by file (numbers show the order). Each file is Markdown; the matching paste-ready HTML is in `../articles/<file name without the NN- prefix>.html`. Screenshot placeholders look like `[SCREENSHOT n: …]`. `[CONFIRM]` tags mark open questions (see `../../CONFIRM-ITEMS.md`).\n"]
+ "Paste order for Product Fruits: go folder by folder, file by file (numbers show the order). Each file is Markdown; the matching paste-ready HTML is in `../articles/<file name without the NN- prefix>.html`. Screenshot placeholders look like `[SCREENSHOT n: …]`. Open product decisions are listed in `../../UPDATE-NOTES.md`.\n"]
 for folder,title,items in J:
     os.makedirs(f"{root}/{folder}")
     idx.append(f"\n## {folder.split('-',1)[0]} · {title}\n")

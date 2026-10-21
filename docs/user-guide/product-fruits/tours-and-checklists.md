@@ -1,7 +1,7 @@
 # Product Fruits – in-app tour / checklist versions
 
 Use these when building a **Tour** or **Checklist** (not a KB article) in Product Fruits.
-CSS selectors come from the front-end code (element `id`s), so they are stable. Tours on `/login` and `/reset-password` run for signed-out users – make sure the Product Fruits snippet is loaded on those public pages **[CONFIRM]**.
+CSS selectors come from the front-end code (element `id`s), so they are stable. Tours on `/login` and `/reset-password` run for signed-out users – make sure the Product Fruits snippet is loaded on those public pages.
 
 ## Tour 1 – How to log in (URL: `/login`)
 | # | Selector | Title | Text |
@@ -72,7 +72,7 @@ Use Product Fruits' point-and-click selector (no stable ids).
 | 1 | Form: name & description | Name your zone | Give the zone a name and a description (5–150 characters). |
 | 2 | **Polygon** / **Circle** tabs | Choose a shape | Pick the shape you want to draw. |
 | 3 | Map drawing tools | Draw it | Draw the zone on the map, or upload a GeoJSON/WKT file. |
-| 4 | Save button | Save | Save the zone. New zones can take up to 24 hours to show data. **[CONFIRM]** |
+| 4 | Save button | Save | Save the zone. New zones show traffic data 24 hours after creation. Each user can have up to 100 custom zones. |
 
 ## Tour 8 – Create your first fleet (URL: `/analytics/fleet/new`)
 Use Product Fruits' point-and-click selector (no stable ids). Only for accounts with fleet management.

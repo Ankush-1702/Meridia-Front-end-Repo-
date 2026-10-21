@@ -5,7 +5,7 @@ Use the **Congestion and Utilisation** tab on a port page to see how many vessel
 ## Before you begin
 - Open a port page (`/analytics/port/:id`).
 - Everything on this tab uses commercial vessel data only. A note at the top right says **Commercial vessels only**; hover over the info icon beside it to read that passenger, fishing and tug vessels are excluded.
-- The tab is only shown to accounts that have the Meridia feature. Locked sections lead to **Contact us** details. **[CONFIRM: exact entitlement behaviour for this tab]**
+- This tab is available to accounts with the Meridia feature enabled. Your user must be tagged to the relevant feature.
 
 ## Steps
 1. Open a port and select the **Congestion and Utilisation** tab.
@@ -36,13 +36,13 @@ All charts and tables update to the chosen period and filters. Charts with no ma
 ## Good to know
 - **Group By** options depend on the period: up to 7 days allows **Day** only; 8 to 60 days adds **Week**; 61 to 90 days adds **Month**; longer periods add **Quarter**. Unavailable options are greyed out. If you shorten the period, the grouping resets to a valid choice.
 - Custom ranges cannot start before two years ago or end after today. If the range is longer than two years, the message **Date range cannot exceed two years from current date.** appears and **Apply** stays disabled.
-- Preset periods end yesterday (UTC). **[CONFIRM: the time basis of the charts]**
+- Preset periods end at 00:00:00 UTC of the previous day.
 - **Vessel Class** is greyed out until at least one **Vessel Type** is selected, and only lists classes for the selected types. A number badge on a filter shows how many items are selected.
 - **Top Visiting Vessels** lists vessels with these columns: **Vessel**, **IMO**, **Flag**, **Type**, **Class** and **Visits**. The info icon says: "Showing repeat visiting vessels only. Single visit vessels are excluded." Select a row to open that vessel's page. The title shows the number of vessels.
 - **Berth Summary** ("All berths — click any row for full detail") has the columns **Berth**, **Operator**, **Type**, **Avg Dwell** and **Median Dwell**. Select a row to open that berth's details on the **Berths** tab.
 - **Key Metrics** and **Top Visiting Vessels** offer **Export Data (CSV)** only. The other charts offer CSV and PNG. The download menu is disabled when a chart has no data.
 - Your date range, flags, vessel types, classes and grouping choices are remembered in your browser.
-- How arrivals, unique arrivals, dwell time and congestion are calculated is not described in the app. **[CONFIRM: definitions of Arrivals, Unique Arrivals per Day and Dwell time at berth]**
+- **Arrivals** is a count of arrivals. **Unique Arrivals per Day** counts each vessel once, by its IMO number. **Dwell time at berth** is the departure time minus the arrival time.
 - The same four figures (without **Arrivals**/**Departures**) appear on the port **Overview** tab under **Performance (Previous 30 days)**.
 
 ## Troubleshooting

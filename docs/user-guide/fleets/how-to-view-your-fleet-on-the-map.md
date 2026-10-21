@@ -38,7 +38,7 @@ The map shows one marker for each filtered vessel with a known position. Selecti
 - **PurpleTRAC screening** and **MTI score** need the matching access. Without it you see a lock with **Unlock**. Hover to see an "Available on request." card, and select **More about PurpleTRAC** or **More about MTI** to open a web page with more information.
 - Marker colours come from the vessel type. Types without a set colour use a default.
 - If the Ask IQ feature is enabled for you, an **Ask IQ** button appears in the vessel panel. Users without it see nothing.
-- The legend currently offers a **Type** view only. The legend by flag is switched off in the code.
+- The legend shows marker colours by vessel **Type**.
 - Event markers do not appear on this map. They appear on the small map inside a fleet event's side panel. See "How to view fleet events".
 - Hiding a type in the legend does not change the filters or the vessel count.
 - Use **Refresh** to reload positions; data also reloads every 5 minutes.

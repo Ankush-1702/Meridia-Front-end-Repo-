@@ -43,7 +43,7 @@ The cards and charts describe the vessels that match your filters, and every cha
 - **Total DWT** and the **Size** (DWT) and **Dimensions** charts may show "Based on X of Y vessels". The info icon explains that only some vessels have adequate data. If none do, you see "No DWT data available" (or the matching measure).
 - The CSV has three columns: the chart name, **Vessels** and **Percentage**. The file is named after the fleet and chart.
 - There is no **MTI Score** filter on this tab.
-- If you untick every value in a filter, the page shows no data. A planned **Export** button for the whole tab is switched off in the code.
+- If you untick every value in a filter, the page shows no data.
 
 ## Troubleshooting
 

@@ -30,11 +30,11 @@ After saving or removing, a message confirms the change, for example "[vessel na
 
 ## Good to know
 - Empty values show a dash (-). Hover over a value to see the full text.
-- Next to each ownership name is a company search icon. **[CONFIRM: what the company search shows]**
+- Next to each ownership name is a company search icon, which starts a company search for that name (see "How to search for company details from a vessel page"). Company search is available on request.
 - Hide or show the left panel with the ship icon (**Hide Vessel Details** / **Show Vessel Details**) in the map toolbar.
-- No notification or subscription setting is shown on the vessel page. **[CONFIRM: whether vessel alerts exist elsewhere]**
-- No export button appears on the vessel page in this code. **[CONFIRM]**
-- Data sources and refresh frequency for these fields are not shown. **[CONFIRM]**
+- There is no notification or subscription setting on the vessel page, and vessel alerts are not available at the moment.
+- There is no export button on the **Overview** tab. To export events, use **Export** on the **Events** tab.
+- These fields refresh according to the date filter and the positions Meridia receives.
 
 ## Troubleshooting
 | Problem | What to do |

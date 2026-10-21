@@ -23,11 +23,11 @@ A message confirms that the chat was "deleted successfully" and it disappears fr
 
 ## Good to know
 - Chats are named after your first message. Long titles are shortened with "...".
-- Each chat has its own web address ending in the chat's ID. You can bookmark it to return to the chat later. **[CONFIRM: whether others can open a shared link]**
+- Each chat has its own web address ending in the chat's ID. You can bookmark it to return to the chat later. Other users cannot open your chat link; your chats stay private to you.
 - Deleting cannot be undone.
 - There is no search, rename or pin for chats.
-- The list loads the 20 most recent chats. **[CONFIRM: how to reach older chats]**
-- How long chats are kept. **[CONFIRM]**
+- Chat history is grouped by period (**Last 7 Days** and **Last 30 Days**, as well as **Today** and **Older**). Open a group to find older chats.
+- Chats are kept for as long as possible.
 
 ## Troubleshooting
 | Problem | What to do |

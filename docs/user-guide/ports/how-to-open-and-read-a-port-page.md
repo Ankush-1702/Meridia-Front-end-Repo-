@@ -40,7 +40,6 @@ You see the port's name and country, and can move between its Overview, Congesti
 - **Ask IQ** appears next to the tabs only if your account or user is entitled to it. Selecting it opens Ask IQ with a prompt about this port.
 - The header has no date range picker for ports.
 - There is no port switcher on the page. To change port, use **Search** or **Library**.
-- A **Details** tab exists in the code but is switched off in the current build, so it is not shown.
 
 ## Troubleshooting
 

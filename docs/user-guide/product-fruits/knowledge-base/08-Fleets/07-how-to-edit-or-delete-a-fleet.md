@@ -29,14 +29,14 @@ Change a fleet's name, description or vessels, or delete it, from the Library or
 ## Good to know
 - **Save Changes** stays greyed out until you change something. The name rules are the same as when creating a fleet.
 - **Cancel** always asks you to confirm with **Discard changes?** while editing. Click **Discard changes** to leave or **Keep editing** to stay.
-- Deleting removes the fleet and its vessel list, stops its notifications and alerts, and removes its analytics and event history. The vessels stay in Meridia and in other fleets. **This can't be undone.**
+- Deleting removes the fleet and its vessel list, and removes its analytics and event history. The vessels stay in Meridia and in other fleets. **This can't be undone.**
 - The delete window shows the fleet's name, type and vessel count.
-- Editing a fleet can't be done from the list view's rows; use the cards. **[CONFIRM]** whether list view offers fleet actions.
+- Editing a fleet can't be done from the list view's rows; use the cards. The list view has no fleet actions.
 
 ## Troubleshooting
 | Problem | What to do |
 |---|---|
-| No **Edit** or **Delete** option | Your account may not have fleet management; contact your administrator. **[CONFIRM]** |
+| No **Edit** or **Delete** option | Your account may not have fleet management; contact your administrator. Fleet management must be enabled for your account. |
 | "A fleet with this name already exists" | Pick a different name. |
 | "Name must be at least 3 characters" | Use a longer name. |
 | "Add at least one vessel" | A fleet can't be saved empty; delete it instead if you no longer need it. |

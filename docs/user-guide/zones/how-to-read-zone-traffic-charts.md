@@ -51,7 +51,7 @@ The charts and table update to your time range and filters, and exports download
 
 - Entries and exits are based on the entry and exit events recorded for the zone. Unique entries are counted by IMO number, so a vessel is counted once however many times it enters.
 - **Vessel Class** is the class a vessel belongs to, based on its vessel type.
-- An **Export** button exists in the code but is switched off, so only the per-chart menus export.
+- Export is available from the menu on each chart or metric.
 - Newly created custom zones show a banner about analytics being available after 24 hours.
 
 ## Troubleshooting

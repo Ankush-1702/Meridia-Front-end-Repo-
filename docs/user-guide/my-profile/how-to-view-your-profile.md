@@ -11,6 +11,6 @@ See the personal details linked to your Meridia account.
 4. You can see: **Username**, **Full Name**, **Email**, **Role** and **Account ID**.
 
 ## Good to know
-- These details are read-only. Your email address cannot be changed, and your role can only be changed by your Meridia account administrator. To change your name, contact your account administrator or support.
+- These details are read-only. Your email address cannot be changed, and your role can only be changed by your Meridia account administrator.
 - Your **Role** and **Account ID** are useful to quote when contacting support.
 - Meridia content (such as the Library) is visible only to accounts and users that have the **Meridia** feature enabled. If it isn't enabled for you, contact your account administrator or Pole Star.

@@ -41,7 +41,6 @@ You see the zone's name, type and country, and can move between its Overview, Tr
 - **Ask IQ** appears next to the tabs only if your account is entitled to it. Selecting it opens Ask IQ with a prompt about this zone.
 - The header has no date range picker for zones. Time ranges are set on the **Traffic** tab.
 - Newly created custom zones show a banner: "Traffic analytics will be available 24 hours after zone creation. Data is processed daily." Traffic data is generated on a previous-day basis, so it is available 24 hours after the zone is created. The banner appears on **Overview** and **Traffic** and disappears after that period.
-- A **Details** tab (name, type, sub type, country, UNLOCODE, WPI number, sub division) exists in the code but is not shown in the tab bar, so it is not available.
 - There is no zone switcher on the page. To change zone, use **Search** or **Library**.
 
 ## Troubleshooting

@@ -38,7 +38,7 @@ The table lists inbound vessels, with the number of rows shown above the table, 
 | **Type** | Vessel type. |
 | **Flag** | Flag country. |
 
-- Optional columns: **Reported Destination**, **MMSI**, **Call Sign**, **Latitude**, **Longitude**, **Course (°)**, **Speed (kts)**, **Heading (°)**, **Draught (m)**, **Navigational Status (status)**, and **Last Updated (UTC)** or **Last Updated (System)**. Position values come from the vessel's latest position report.
+- Further fields available for this view: **Reported Destination**, **MMSI**, **Call Sign**, **Latitude**, **Longitude**, **Course (°)**, **Speed (kts)**, **Heading (°)**, **Draught (m)**, **Navigational Status (status)**, and **Last Updated (UTC)** or **Last Updated (System)**. Position values come from the vessel's latest position report.
 - The table shows at most 500 vessels. Use **Export** for the rest.
 - In the map popup the labels are **Name**, **IMO**, **Vessel Type**, **Flag**, **Reported Dest**, **Reported ETA**, **Timestamp** and **Speed/Course**.
 - **Export** on this view offers **24h**, **7d**, **30d** or **All** (no custom range). The file appears under **Notifications** then **Downloads**; the file is a CSV and export times are in UTC.

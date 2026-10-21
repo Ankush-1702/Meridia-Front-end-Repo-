@@ -17,7 +17,7 @@ Use the **Events** tab to see recent port, zone and other events for every vesse
    `[SCREENSHOT 2: Event Type dropdown]`
 5. Type in **Search...** to narrow the rows. It matches any value, including the dates as you see them.
 6. Select a column heading to sort. Select it again to reverse the order.
-7. Open the column panel on the side of the table to add or hide columns. **[CONFIRM]** where it appears on screen.
+7. Open the column panel on the right of the table to add or hide columns.
 8. To restore the standard columns, select **Reset columns**.
 9. Select a row to open the **Event Details** side panel.
    `[SCREENSHOT 3: Event Details side panel]`
@@ -47,20 +47,23 @@ The table lists the matching events, and the text beside the search box says, fo
 | Location | The port or zone linked to the event. |
 | Country | Country of that location. |
 | UN/LOCODE | The location's UN/LOCODE, where it has one. |
-| Location Type | Kind of location. **[CONFIRM]** values. |
+| Location Type | Kind of location, for example ports, custom, jurisdictional or ECA. |
 | Speed | Vessel speed in knots. |
 | Course | Vessel course in degrees. |
 | Duration (hours) | How long the event lasted, where that applies. |
 
 - Optional columns come in groups: **Vessel identity** (**MMSI**, **Call Sign**, **Flag**, **Type**), **Position & movement** (**Heading**, **Draught**, **Navigational Status**, **Reported Destination**, **Reported ETA**), **Port State Control** (**Authority**, **Inspection Type**, **Inspection Date**, **Detained**, **Days Detained**, **No. Defects**, **Release Date**), **STS pairing** (**STS Type**, **Paired Vessel**, **Paired IMO**, **STS Ended**), **AIS gap** (**Gap Stopped**, **Gap Resumed**, **Draught Change**) and **Positional discrepancy** (**Has Ended**, **Started Latitude**, **Started Longitude**, **Stopped Timestamp**, **Stopped Latitude**, **Stopped Longitude**).
-- **[CONFIRM]** the exact definitions of AIS Gap, STS Pairing, Positional Discrepancy and Area Arrival/Departure events.
+- **AIS Gap**: the vessel stops reporting its position for a set period of time.
+- **Positional Discrepancy**: the vessel shows multiple positions in different places, or the same MMSI is used by two vessels.
+- **STS Pairing**: a ship-to-ship exchange (of cargo).
+- **Area Arrival** and **Area Departure**: arrival at or departure from the port's anchorage area.
 - A dash (-) means no value. A tooltip beside the table says not every column applies to every event type.
 - The table shows at most the 500 most recent events, 100 per page. Export timestamps are in UTC.
 - In the panel, **Vessels** appears only for vessels found in the fleet. STS pairings show **Primary vessel** and **Paired vessel**. The **Location** section has a small map. Port State Control events have no map.
 - On that map, STS pairings show a pairing marker. AIS gaps show a start and end marker joined by a dashed red line. Positional discrepancies show start and end markers joined by a dashed yellow line. Port and zone events show the vessel at the event position, the location pin and, for zones, the boundary.
 - Location view shows **Last 24 hours**: **Arrivals**/**Entries**, **In port**/**In zone**, **Departures**/**Exits**.
 - Data reloads every 5 minutes.
-- There are no notification settings on the fleet page. **[CONFIRM]** whether fleet alerts exist elsewhere.
+- There are no notification settings on the fleet page. Fleet alerts are not available.
 
 ## Troubleshooting
 
