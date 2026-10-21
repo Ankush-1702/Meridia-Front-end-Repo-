@@ -95,4 +95,5 @@ Title → Before you begin → Numbered steps (one action each, UI labels in **b
 - `product-fruits/knowledge-base/` – **all articles as Markdown, grouped by user journey** (01 Getting started → 10 Meridia IQ) with an `INDEX.md`; paste in that order. Regenerate with `python3 tools/build_journeys.py`.
 - `product-fruits/articles/` – paste-ready HTML for each article; `product-fruits/tours-and-checklists.md` – in-app tours.
 - `CONFIRM-ITEMS.md` / `CONFIRM-ITEMS.csv` – **every open [CONFIRM] item in one flat list** (regenerate with `python3 tools/list_confirms.py`); `CONFIRM-LIST.md` – the same questions grouped by owner (PM / backend / front-end / support / QA).
+- `offline/Meridia-User-Guide.html` – **one self-contained HTML file** (no internet needed): journey menu, full-text search, links between articles, light/dark, print. Open it from disk or upload it to any website/intranet. Rebuild after edits with `python3 tools/build_journeys.py && python3 tools/build_offline_html.py` (template: `tools/offline_template.html`).
 
